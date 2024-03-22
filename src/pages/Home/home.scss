@@ -1,0 +1,24 @@
+@use "./../../../sass/" as *;
+
+.home-container {
+  width: 69.563rem;
+  height: 41.75rem;
+  background-image: url(../../assets/images/HomeCover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.custom-button-home {
+   margin-top: 200px;
+   animation: sparkle 1s infinite;
+}
+@keyframes sparkle {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }

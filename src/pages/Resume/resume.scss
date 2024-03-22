@@ -1,0 +1,15 @@
+@use "./../../../sass/" as *;
+
+.resume-container {
+    width: 69.563rem;
+    height: 41.75rem;
+    background-image: url(../../assets/images/ResumeCover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include flex(default, flex-start,center);
+    overflow:hidden;
+}
