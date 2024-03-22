@@ -1,0 +1,12 @@
+@use "./../../../sass/" as *;
+
+.frame-container {
+  border: solid 10px;
+
+  width: 940px;
+  height: 640px;
+  margin-left: 50px;
+  font-family: $primary-font;
+  text-align: center;
+  padding-top: 10px;
+}

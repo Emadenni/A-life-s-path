@@ -1,79 +1,85 @@
 @use "./../../../sass/" as *;
 
 .sidebar-wrapper {
-    @include flex(default,center,center);
-    transition: left 0.5s; 
-    
+  @include flex(default, center, center);
+  transition: left 0.5s;
 }
 
 .sidebar-container {
-    @include flex(column,center, flex-start);
-    gap: 8px;
-    list-style-type:none;
-    background-color: rgb(0, 0, 0,0.4);
-    padding: 0px 5px 0px 0px;
-    font-family: $primary-font;
-    font-size: 50px;
+  @include flex(column, center, flex-start);
+  gap: 8px;
+  list-style-type: none;
+  background-color: rgb(0, 0, 0, 0.4);
+  padding: 0px 5px 0px 0px;
+  font-family: $primary-font;
+  font-size: 50px;
+  border-radius: 5px;
+  z-index: 3000;
+  transform: translateX(-310px);
+  li {
+    flex-wrap: no-wrap;
+    width: 107%;
+    padding: 20px 20px 15px 0px;
+    background-color: rgb(255, 255, 255, 0.5);
     border-radius: 5px;
-    z-index:3000;
-    transform: translateX(-310px);
-    li {
-        
-       flex-wrap: no-wrap;
-        width: 107%;
-        padding:20px 20px 15px 0px;
-        background-color: rgb(255, 255, 255,0.5);
-        border-radius: 5px;
-        cursor: pointer;
-       overflow: hidden;
-        @include flex(default, space-between, center);
-    }
+    cursor: pointer;
+    overflow: hidden;
+    @include flex(default, space-between, center);
+  }
 
-    li:hover {
-        background-color: gray;
-        color: aliceblue;
-    }
+  li:hover {
+    background-color: gray;
+    color: aliceblue;
+  }
+}
+
+/* $isOpen: false; */
+
+.sidebar-wrapper:not(.open) {
+  .sidebar-container li:hover {
+    transform: translateX(310px);
+    
+  }
 }
 
 .sidebar-wrapper.open {
-    transform: translateX(310px);
-  }
+  transform: translateX(310px);
+}
 
 .toggleSidebar-button {
-    height: 590px;
-    font-family: $primary-font;
-    font-size: 26px;
-    font-weight: 800;
-    padding: 3px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    background-color: rgb(255, 255, 255,0.5);
-    margin-left: -290px;
-    cursor: pointer;
+  height: 590px;
+  font-family: $primary-font;
+  font-size: 26px;
+  font-weight: 800;
+  padding: 3px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: rgb(255, 255, 255, 0.5);
+  margin-left: -290px;
+  cursor: pointer;
 }
 
 .label {
-    width: 12px;
-    height: 80px;
-    margin: -16px;
-    
+  width: 12px;
+  height: 80px;
+  margin: -16px;
 }
 
 .blue {
-    background-color: rgb(0, 0, 255,0.6);
+  background-color: rgb(0, 0, 255, 0.6);
 }
 .red {
-    background-color: rgba(191, 25, 25, 0.6);
+  background-color: rgba(191, 25, 25, 0.6);
 }
 .green {
-    background-color: rgba(4, 90, 4, 0.6);
+  background-color: rgba(4, 90, 4, 0.6);
 }
 .orange {
-    background-color: rgba(215, 93, 18, 0.6);
+  background-color: rgba(215, 93, 18, 0.6);
 }
 .purple {
-    background-color: rgba(123, 14, 125, 0.6);
+  background-color: rgba(123, 14, 125, 0.6);
 }
 .brown {
-    background-color: rgba(45, 9, 9, 0.89);
+  background-color: rgba(45, 9, 9, 0.89);
 }

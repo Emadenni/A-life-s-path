@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import Button from "../../components/button/Button";
+import Button from "../../components/Button/Button";
 import profilePic from "../../assets/images/profilePic.jpg";
 import profileName from "../../assets/images/profileName.png";
 import "./intro.scss";
