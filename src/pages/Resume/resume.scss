@@ -1,26 +1,26 @@
 @use "./../../../sass/" as *;
 
 .resume-container {
-    width: 69.563rem;
-    height: 41.75rem;
-    background-image: url(../../assets/images/ResumeCover.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include flex(default, flex-start,center);
-    overflow:hidden;
-    opacity: 0;
-    animation: fadeIn 2s forwards;
+  width: 69.563rem;
+  height: 41.75rem;
+  background-image: url(../../assets/images/ResumeCover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include flex(default, flex-start, center);
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  box-shadow: -1px 10px 75px 25px  rgba(60, 59, 59, 0.5);
 }
 
 @keyframes fadeIn {
-    from {
-      
-    }
-    to {
-      opacity: 1;
-    }
+  from {
   }
+  to {
+    opacity: 1;
+  }
+}

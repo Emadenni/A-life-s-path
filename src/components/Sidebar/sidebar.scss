@@ -3,6 +3,7 @@
 .sidebar-wrapper {
   @include flex(default, center, center);
   transition: left 0.5s;
+  z-index: 3000;
 }
 
 .sidebar-container {
@@ -66,20 +67,20 @@
 }
 
 .blue {
-  background-color: rgb(0, 0, 255, 0.6);
+  background-color: #0000ff99;
 }
 .red {
-  background-color: rgba(191, 25, 25, 0.6);
+  background-color: #bf191999;
 }
 .green {
-  background-color: rgba(4, 90, 4, 0.6);
+  background-color: #045a0499;
 }
 .orange {
-  background-color: rgba(215, 93, 18, 0.6);
+  background-color: #d75d1299;
 }
 .purple {
-  background-color: rgba(123, 14, 125, 0.6);
+  background-color: #7b0e7d99;
 }
 .brown {
-  background-color: rgba(45, 9, 9, 0.89);
+  background-color: #2d0909e3;
 }

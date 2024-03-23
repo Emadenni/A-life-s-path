@@ -18,8 +18,7 @@ const Intro = (props: Props) => {
       <h1>Welcome!</h1>
       <div className="intro-container__box">
         <p>
-          “In the following pages, I'll introduce myself and share who I am through my experiences, both professional
-          and personal. “
+          “In the following pages, I am going to introduce my self through my professional and personal experiences. “
         </p>
       </div>
 

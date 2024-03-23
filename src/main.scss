@@ -10,7 +10,11 @@
 }
 
 body {
-    background-color: #1E1E1E;
+  /*   background-color: #1E1E1E; */
+  background-image: url(../src/assets/images/main-bkg.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
    
 }
 
