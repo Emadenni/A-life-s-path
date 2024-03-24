@@ -7,18 +7,22 @@ import Experiences from "../../components/Experiences/Experiences";
 import Skills from "../../components/Skills/Skills";
 import Portfolio from "../../components/Portfolio/Portfolio";
 import Extra from "../../components/Extra/Extra";
+import useSidebarStore from "../../Store/store";
 
 const Resume = () => {
   const [selectedComponent, setSelectedComponent] = useState("AboutMe");
+  const { isOpen } = useSidebarStore();
 
   const handleSelectComponent = (componentName: string) => {
     setSelectedComponent(componentName);
   };
+  
+ 
 
   return (
-    <div className="resume-container">
-      <Sidebar onSelectComponent={handleSelectComponent} />
-      <div className="selected-component">
+    <div className={`resume-container ${isOpen ? 'sidebar-open' : ''}`}>
+      <Sidebar onSelectComponent={handleSelectComponent}/>
+      <div className={`selectedComponent ${isOpen ? 'sidebar-open' : ''}`}>
         {selectedComponent === "AboutMe" && <AboutMe />}
         {selectedComponent === "Education" && <Education />}
         {selectedComponent === "Experiences" && <Experiences />}

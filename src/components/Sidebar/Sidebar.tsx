@@ -1,24 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import "./sidebar.scss";
+import useSidebarStore from "../../Store/store";
 
 type Props = {
   onSelectComponent: (componentName: string) => void;
 };
 
 const Sidebar = ({ onSelectComponent }: Props) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
+  const { isOpen, toggleSidebar } = useSidebarStore();
 
   const handleItemClick = (componentName: string) => {
-    onSelectComponent(componentName); // Comunica aResume quale componente deve essere visualizzato
+    onSelectComponent(componentName); 
   };
 
   return (
-    <>
-      <div className={`sidebar-wrapper ${isOpen ? 'open' : ''}`}>
+    <div className={`sidebar-wrapper ${isOpen ? 'open' : ''}`}>
       <ul className="sidebar-container">
         <li onClick={() => handleItemClick("AboutMe")}>About Me <span className="label blue"></span> </li> 
         <li onClick={() => handleItemClick("Education")}>Education <span className="label red"></span> </li>
@@ -29,10 +25,9 @@ const Sidebar = ({ onSelectComponent }: Props) => {
       </ul>
 
       <button onClick={toggleSidebar} className="toggleSidebar-button">
-      {isOpen ? '<<' : '>>'}
+        {isOpen ? '<<' : '>>'}
       </button>
-      </div>
-    </>
+    </div>
   );
 };
 

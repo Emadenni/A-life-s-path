@@ -4,6 +4,8 @@
   @include flex(default, center, center);
   transition: left 0.5s;
   z-index: 3000;
+  backdrop-filter: blur(4px)
+
 }
 
 .sidebar-container {
@@ -34,7 +36,6 @@
   }
 }
 
-/* $isOpen: false; */
 
 .sidebar-wrapper:not(.open) {
   .sidebar-container li:hover {
@@ -45,7 +46,9 @@
 
 .sidebar-wrapper.open {
   transform: translateX(310px);
+
 }
+ 
 
 .toggleSidebar-button {
   height: 590px;
