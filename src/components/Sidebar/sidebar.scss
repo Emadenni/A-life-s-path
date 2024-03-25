@@ -4,8 +4,6 @@
   @include flex(default, center, center);
   transition: left 0.5s;
   z-index: 3000;
-
-
 }
 
 .sidebar-container {
@@ -37,19 +35,15 @@
   }
 }
 
-
 .sidebar-wrapper:not(.open) {
   .sidebar-container li:hover {
     transform: translateX(310px);
-    
   }
 }
 
 .sidebar-wrapper.open {
   transform: translateX(310px);
-
 }
- 
 
 .toggleSidebar-button {
   height: 590px;
@@ -91,8 +85,7 @@
 }
 
 .overlay {
-backdrop-filter: blur(5px);
-  background-color: rgb(255, 255, 255,0.3);
+  backdrop-filter: blur(3px);
   width: 1542px;
   height: 670px;
   position: absolute;
@@ -100,9 +93,10 @@ backdrop-filter: blur(5px);
   left: -200;
   @include flex(default, end, center);
 
-   img {
-    width:600px;
-    margin-right: 70px;
+  img {
+    width: 700px;
+    margin-right: 20px;
+    border-radius: 10%;
   }
 }
 

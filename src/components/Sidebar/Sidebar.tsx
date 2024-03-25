@@ -1,7 +1,7 @@
 import React from "react";
 import "./sidebar.scss";
 import useSidebarStore from "../../Store/store";
-import logoALP from "../../assets/images/logoALP.png"
+import logoALP from "../../assets/images/logoALP.png";
 
 type Props = {
   onSelectComponent: (componentName: string) => void;
@@ -12,6 +12,9 @@ const Sidebar = ({ onSelectComponent }: Props) => {
 
   const handleItemClick = (componentName: string) => {
     onSelectComponent(componentName);
+    if (isOpen === true) {
+      toggleSidebar();
+    }
   };
 
   return (
@@ -42,11 +45,10 @@ const Sidebar = ({ onSelectComponent }: Props) => {
         <button onClick={toggleSidebar} className="toggleSidebar-button">
           {isOpen ? "<<" : ">>"}
         </button>
-        <div  className={` ${isOpen ? "overlay" : "hidden"}`}>
+        <div className={` ${isOpen ? "overlay" : "hidden"}`}>
           <img src={logoALP} alt="logo" />
         </div>
       </div>
-
     </>
   );
 };
