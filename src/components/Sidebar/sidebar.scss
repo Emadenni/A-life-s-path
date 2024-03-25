@@ -4,11 +4,12 @@
   @include flex(default, center, center);
   transition: left 0.5s;
   z-index: 3000;
-  backdrop-filter: blur(4px)
+
 
 }
 
 .sidebar-container {
+  position: relative;
   @include flex(column, center, flex-start);
   gap: 8px;
   list-style-type: none;
@@ -61,6 +62,7 @@
   background-color: rgb(255, 255, 255, 0.5);
   margin-left: -290px;
   cursor: pointer;
+  z-index: 3000;
 }
 
 .label {
@@ -86,4 +88,24 @@
 }
 .brown {
   background-color: #2d0909e3;
+}
+
+.overlay {
+backdrop-filter: blur(5px);
+  background-color: rgb(255, 255, 255,0.3);
+  width: 1542px;
+  height: 670px;
+  position: absolute;
+  z-index: 100;
+  left: -200;
+  @include flex(default, end, center);
+
+   img {
+    width:600px;
+    margin-right: 70px;
+  }
+}
+
+.hidden {
+  display: none;
 }
