@@ -6,6 +6,7 @@
 }
 
 .education-container {
+  animation: slideUp 0.5s forwards;
   overflow: hidden;
   background-color: transparent;
   width: 850px;
@@ -55,11 +56,25 @@
       }
     }
   }
+
+  section {
+    margin-top: 10px;
+    animation: slideUp 0.08s forwards;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(60%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 
 #scroll-down-arrow {
   position: absolute;
-  bottom: 50px;
+  bottom: -50px;
   right: 380px;
   cursor: pointer;
   animation: bounce 1s infinite alternate;
@@ -67,6 +82,19 @@
   font-size: 36px;
 }
 #scroll-down-arrow:hover {
+  scale: 1.1;
+  color: yellow;
+}
+#scroll-up-arrow {
+  position: absolute;
+  top: -119px;
+  right: 395px;
+  cursor: pointer;
+  animation: bounce 1s infinite alternate;
+  color: white;
+  font-size: 36px;
+}
+#scroll-up-arrow:hover {
   scale: 1.1;
   color: yellow;
 }
@@ -80,3 +108,18 @@
   }
 }
 
+.section5 {
+  #scroll-down-arrow {
+    left: 260px;
+  }
+  #scroll-up-arrow {
+    left: 260px;
+    top: -95px;
+  }
+}
+
+.coursePlan-img {
+  width: 510px;
+  margin-left: 32px;
+  border-radius: 10px;
+}
