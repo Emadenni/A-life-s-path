@@ -155,7 +155,7 @@ const Education = () => {
       title: "Section 6",
       content: (
         <section className="section6">
-          <p>At the end of the education I will be qualified to cover the following roles:</p>
+          <p>At the end of the education I will be qualified to cover the following positions:</p>
           <ul>
             <li>Backend developer with JavaScript</li>
             <li>Frontend developer with JavaScript</li>

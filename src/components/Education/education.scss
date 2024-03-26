@@ -51,7 +51,7 @@
       font-size: 24px;
       letter-spacing: 0.8px;
       span {
-        font-size: 20px;
+        font-size: 18px;
         color: white;
       }
     }
@@ -87,7 +87,7 @@
 }
 #scroll-up-arrow {
   position: absolute;
-  top: -119px;
+  top: -99px;
   right: 395px;
   cursor: pointer;
   animation: bounce 1s infinite alternate;
@@ -104,13 +104,13 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(20px);
+    transform: translateY(12px);
   }
 }
 
 .section5 {
   #scroll-down-arrow {
-    left: 260px;
+    left: 275px;
   }
   #scroll-up-arrow {
     left: 260px;
