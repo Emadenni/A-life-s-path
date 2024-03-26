@@ -19,25 +19,11 @@ const Experiences = () => {
       content: (
         <section className="section1">
           <p>
-            I am graduated and qualified as a Technical Specialist in Tourism and Hospitality Services with a
-            specialization in front-office (high school level).
+            Throughout my life, I have been fortunate to experience a large variety of jobs. Each has held significant
+            meaning in my life, but it would be unnecessary and redundant to list them all. I will limit myself to
+            highlighting the most significant ones in the following pages.
           </p>
-          <ul>
-            <li>
-              School: <br />
-              <span>
-                "S.Savioli" professional hotel institute <br /> Riccione (Italy)
-              </span>
-            </li>
-            <li>
-              Year: <br />
-              <span>2005</span>
-            </li>
-            <li>
-              Grade: <br />
-              <span>73/100</span>
-            </li>
-          </ul>
+
           {currentSection === 0 && (
             <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(1)} id="scroll-down-arrow" />
           )}
@@ -49,27 +35,27 @@ const Experiences = () => {
       content: (
         <section className="section2">
           <p>
-            Between 2020 and 2023, I undertook a course of study related to the Swedish language and culture through the
-            following courses attended at CENTRUM FÖR VUXENUTBILDNING in Linköping:
+            TOURISM - Having grown up in a renowned Italian tourist area (Riviera Romagnola), I have been employed for
+            several years in the tourism sector. Specifically, I have gained experience as a <strong> bartender</strong>
+            , <strong>waiter</strong> , and
+            <strong> receptionist</strong> . Here are some of the companies for which I have worked in the tourism
+            sector:
           </p>
           <ul>
             <li>
-              SFI: <br />
-              <span>SFI C, SFI D</span>
-            </li>
-            <li>
-              BASIC LEVEL:
+              <a href="https://www.hotelninfeacattolica.it/">Hotel Ninfea </a>
               <br />
-              <span>SVA Grund 1,2,3 and 4</span>
+              <span>2004 - 2014 </span>Cattolica RN (Italy)
             </li>
             <li>
-              BASIC LEVEL:
+              <a href="https://www.hotelambasciatorimisano.com/">Hotel Ambasciatori </a>
               <br />
-              <span>Samhällskunskap</span>
+              <span> 2015 </span> Misano A.(Italy)
             </li>
             <li>
-              HIGH SCHOOL LEVEL: <br />
-              <span> SVA 1 and SVA 2</span>
+              <a href="https://www.tavernadelpescatore.it/">Taverna del pescatore </a>
+              <br />
+              <span>2015 - 2017 </span>Pesaro (Italy)
             </li>
           </ul>
           {currentSection === 1 && (
@@ -86,17 +72,17 @@ const Experiences = () => {
       content: (
         <section className="section3">
           <p>
-            Since 2022, I started to focus on IT and programming, initially as a self-learner. From February 2023
-            onward, I embarked on an academic path through the following courses:
+            ENTERTAINMENT: In 2009, almost by chance, I found myself in the world of gaming and entertainment. I was
+            hired at the BINGO Beach and Beach in Riccione (Italy) as a <strong>waiter</strong>, later emerging as the{" "}
+            <strong>assistant manager/team leader</strong> few years later. <br /> In this role, I had the opportunity
+            to lead a team of up to 20 people.
           </p>
+
           <ul>
             <li>
-              WEBBUTVECKLING 1: <br />
-              <span>High School level at NTI-Skolan with grade :B</span>
-            </li>
-            <li>
-              WEBBUTVECKLING 2: <br />
-              <span>High School level at NTI-Skolan with grade :A</span>
+              <a href="https://bingoriccione.wixsite.com/bingoriccione/">BINGO Beach and Beach</a>
+              <br />
+              <span>2009 - 2015 </span> Riccione(Italy)
             </li>
           </ul>
           {currentSection === 2 && (
@@ -113,18 +99,23 @@ const Experiences = () => {
       content: (
         <section className="section4">
           <p>
-            Since 2022, I started to focus on IT and programming, initially as a self-learner. From February 2023
-            onward, I embarked on an academic path through the following courses:
+            CONSTRUCTION: Another significant chapter in my work life has been in construction. At the age of 20, I
+            worked as a <strong>naval plumber</strong> in the production of Ferretti Custom Line 97' yachts for
+            approximately 2 years. Before working as a <strong>carpenter</strong> in Sweden for 5 years, I also gained
+            experience as a <strong>painter</strong> and in roles involving <strong>masonry</strong> and{" "}
+            <strong>demolition</strong>. <br /> <br />
+            Below the most significant experiences in the in the branch:
           </p>
           <ul>
             <li>
-              BFU: <br />
-              <span> Preparation course at Göteborgsfolkuniversitet inherent HTML, CSS and JS</span>
+              <a href="https://www.customline-yacht.com/en-US/">MTO - Custom Line </a>
+              <br />
+              <span>2006 - 2009 </span> Cattolica RN (Italy)(Italy)
             </li>
             <li>
-              JAVASCRIPTUTVECKLARE:
+              <a href="https://www.atvidabergshus.se/">ÅTVIDABERGSHUS </a>
               <br />
-              <span>YH/Göteborgsfolkusiversitet (it will end June 2025)</span>
+              <span>2018 - 2023</span> Åtvidaberg (Sweden)
             </li>
           </ul>
           {currentSection === 3 && (
@@ -140,8 +131,23 @@ const Experiences = () => {
       title: "Section 5",
       content: (
         <section className="section5">
-          <p>Courses included in my current YH's education:</p>
-          <img src={coursePlan} alt="course-plan" className="coursePlan-img" />
+          <p>
+            NOW: At this moment, I am oriented in the field of IT, trying to channel as much energy as possible into
+            turning a great passion into a profession. In the meantime, to support myself financially, I work the night
+            shift at DB SCHENKER through Student Consulting.
+          </p>
+          <ul>
+            <li>
+              <a href="https://www.dbschenker.com/global">DB Schenker</a>
+              <br />
+              <span>2023 - Until completion of studies</span> Linköping (Sweden)
+            </li>
+            <li>
+              <a href="https://custitude.shopmetrics.com/auth/index.asp#login">Mistery shopper</a>
+              <br />
+              <span>occasionally</span> All around Sweden
+            </li>
+          </ul>
           {currentSection === 4 && (
             <React.Fragment>
               <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(3)} id="scroll-up-arrow" />
@@ -155,15 +161,12 @@ const Experiences = () => {
       title: "Section 6",
       content: (
         <section className="section6">
-          <p>At the end of the education I will be qualified to cover the following positions:</p>
-          <ul>
-            <li>Backend developer with JavaScript</li>
-            <li>Frontend developer with JavaScript</li>
-            <li>IT consultant application programmer</li>
-            <li>IT consultant database development</li>
-            <li>IT consultant system development</li>
-            <li>IT consultant web and multimedia</li>
-          </ul>
+          <p>
+            I would like to repeat that I have selected the experiences that I considered most relevant. At the same
+            time I would like to point out that <strong>every single experience</strong>, even the most insignificant, has enriched me in
+            his own way. The work in general has shaped me a lot.
+          </p> <br /> <br />
+          
           {currentSection === 5 && (
             <React.Fragment>
               <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(4)} id="scroll-up-arrow" />
