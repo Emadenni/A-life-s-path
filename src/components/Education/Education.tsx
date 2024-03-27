@@ -144,8 +144,8 @@ const Education = () => {
           <img src={coursePlan} alt="course-plan" className="coursePlan-img" />
           {currentSection === 4 && (
             <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(3)} id="scroll-up-arrow" />
-              <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(5)} id="scroll-down-arrow" />
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(3)} id="scroll-up-arrow-special" />
+              <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(5)} id="scroll-down-arrow-special" />
             </React.Fragment>
           )}
         </section>
@@ -166,7 +166,7 @@ const Education = () => {
           </ul>
           {currentSection === 5 && (
             <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(4)} id="scroll-up-arrow" />
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(4)} id="scroll-up-arrow"  />
             </React.Fragment>
           )}
         </section>

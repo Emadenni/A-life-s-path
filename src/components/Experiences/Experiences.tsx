@@ -110,7 +110,7 @@ const Experiences = () => {
             <li>
               <a href="https://www.customline-yacht.com/en-US/">MTO - Custom Line </a>
               <br />
-              <span>2006 - 2009 </span> Cattolica RN (Italy)(Italy)
+              <span>2006 - 2009 </span> Cattolica RN (Italy)
             </li>
             <li>
               <a href="https://www.atvidabergshus.se/">ÅTVIDABERGSHUS </a>

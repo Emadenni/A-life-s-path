@@ -108,14 +108,33 @@
   }
 }
 
-.section5 {
-  #scroll-down-arrow {
-    left: 275px;
-  }
-  #scroll-up-arrow {
-    left: 260px;
-    top: -95px;
-  }
+#scroll-down-arrow-special {
+  position: absolute;
+  bottom: -30px;
+  right: 270px;
+  cursor: pointer;
+  animation: bounce 1s infinite alternate;
+  color: white;
+  font-size: 36px;
+}
+
+#scroll-down-arrow--special:hover {
+  scale: 1.1;
+  color: yellow;
+}
+#scroll-up-arrow-special {
+  position: absolute;
+  top: -99px;
+  right: 286px;
+  cursor: pointer;
+  animation: bounce 1s infinite alternate;
+  color: white;
+  font-size: 36px;
+}
+
+#scroll-up-arrow-special {
+  scale: 1.1;
+  color: yellow;
 }
 
 .coursePlan-img {
