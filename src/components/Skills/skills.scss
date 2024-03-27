@@ -84,7 +84,7 @@
 #scroll-down-arrow-itSkills {
   position: absolute;
   bottom: -33px;
-  right: 276px;
+  right: 256px;
   cursor: pointer;
   animation: bounce 1s infinite alternate;
   color: white;
@@ -110,7 +110,7 @@
 #scroll-up-arrow-itSkills  {
   position: absolute;
   top: -50px;
-  right: 280px;
+  right: 260px;
   cursor: pointer;
   animation: bounce 1s infinite alternate;
   color: white;
@@ -161,6 +161,10 @@
   img {
     width: 50px;
   }
+}
+.card:hover {
+
+  background-color: rgb(240, 248, 255, 0.5);
 }
 
 .section2-skills  {

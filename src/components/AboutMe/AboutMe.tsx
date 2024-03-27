@@ -18,20 +18,24 @@ const AboutMe = (props: Props) => {
         <img src={profilePic} alt="profile" />
         <p>
           My name is Emanuele De Negri, I am 37 years old, and I have recently embarked on my journey in the world of
-          web development and programming. <br /> <br /> My goal is to dedicate as much time as possible to
-          this great passion and turn it into a full-fledged career. The means I am using to achieve my goal include
-          skill development, perseverance, humility and a thirst for knowledge.
+          web development and programming. <br /> <br /> My goal is to dedicate as much time as possible to this great
+          passion and turn it into a full-fledged career. The means I am using to achieve my goal include
+          <span className="red"> skill development</span>,<span className="red"> perseverance</span>,
+          <span className="red"> humility</span> and a <span className="red">thirst for knowledge</span>.
         </p>
         <ul>
           <div className="listPart1">
             <li>
-              Name: <br /><span> Emanuele De Negri</span>
+              Name: <br />
+              <span> Emanuele De Negri</span>
             </li>
             <li>
-              Date of birth: <br /><span> 28/12/1986</span>
+              Date of birth: <br />
+              <span> 28/12/1986</span>
             </li>
             <li>
-              Place of birth: <br /><span> Cava dei Tirreni SA (Italy)</span>
+              Place of birth: <br />
+              <span> Cava dei Tirreni SA (Italy)</span>
             </li>
           </div>
           <div className="listPart2">
