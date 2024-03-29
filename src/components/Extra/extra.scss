@@ -6,7 +6,7 @@
 
 .extra-container {
   width: 850px;
-  height: 500px;
+  min-height: 500px;
   position: absolute;
   top: 110px;
   left: 95px;
@@ -40,8 +40,11 @@
 .comfort-zone-img {
   border-radius: 8px;
 }
-.tastes-img {
+.playlist{
   border-radius: 8px;
+  width: 300px;
+  height: 352px;
+  border:none;
 }
 
 .section1-extra {
@@ -62,7 +65,7 @@
 }
 
 .section2-extra {
-  @include flex(column, space-around, center);
+  @include flex(default, space-around, center);
   gap: 35px;
   margin-top: 20px;
   p {
@@ -77,3 +80,4 @@
     letter-spacing: 1px;
   }
 }
+

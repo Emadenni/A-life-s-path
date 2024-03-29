@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-free/css/all.css";
 import React from "react";
+import Playlist from "../../Playlist";
 
 type Section = {
   title: string;
@@ -28,6 +29,7 @@ const Extra: React.FC = () => {
             English among ourselves, and we ensure that this is an added value.
           </p>
           <img src="https://picsum.photos/350/200" alt="pic" className="comfort-zone-img" />
+         
 
           {currentSection === 0 && (
             <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(1)} id="scroll-down-arrow-extra" />
@@ -49,7 +51,7 @@ const Extra: React.FC = () => {
             programming, I sometimes enjoy 'playing' with AI and graphics in general. Among other things, I like
             creating logos.
           </p>
-          <img src="https://picsum.photos/350/200" alt="pic" className="tastes-img" />
+          <Playlist />
 
           {currentSection === 1 && (
             <React.Fragment>
