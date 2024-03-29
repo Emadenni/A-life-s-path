@@ -21,7 +21,7 @@ const Experiences = () => {
           <p>
             Throughout my life, I have been fortunate to experience a large variety of jobs. Each has held significant
             meaning in my life, but it would be unnecessary and redundant to list them all. I will limit myself to
-            highlighting the most significant ones in the following pages.
+            highlighting the most significant ones in the following slides.
           </p>
 
           {currentSection === 0 && (
@@ -104,7 +104,7 @@ const Experiences = () => {
             approximately 2 years. Before working as a <strong>carpenter</strong> in Sweden for 5 years, I also gained
             experience as a <strong>painter</strong> and in roles involving <strong>masonry</strong> and{" "}
             <strong>demolition</strong>. <br /> <br />
-            Below the most significant experiences in the in the branch:
+            Below the most significant experiences in the branch:
           </p>
           <ul>
             <li>
@@ -164,7 +164,7 @@ const Experiences = () => {
           <p>
             I would like to repeat that I have selected the experiences that I considered most relevant. At the same
             time I would like to point out that <strong>every single experience</strong>, even the most insignificant, has enriched me in
-            his own way. The work in general has shaped me a lot.
+            his own way. <br /> <br /> <strong>The work in general has definitely shaped my character a lot.</strong> 
           </p> <br /> <br />
           
           {currentSection === 5 && (
@@ -181,7 +181,7 @@ const Experiences = () => {
     <div className="experiences-wrapper">
       <Frame
         borderColor=" rgba(4, 90, 4, 0.02)"
-        backgroundColor=" rgba(4, 90, 4, 0.04)"
+        backgroundColor=" rgba(4, 90, 4, 0.038)"
         title="Experiences"
         textDecorationColor="#045a0499"
       />

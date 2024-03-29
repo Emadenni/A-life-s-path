@@ -1,0 +1,35 @@
+@use "../../../sass/" as *;
+
+.extra-wrapper {
+  position: relative;
+}
+
+.extra-container {
+  width: 850px;
+  height: 500px;
+  position: absolute;
+  top: 110px;
+  left: 95px;
+  right: 0;
+  bottom: 0;
+  padding: 0px;
+  gap: 6px;
+  @include flex(column, center, center);
+  img {
+    width: 100px;
+    transform: translate(-300px, -80px);
+  }
+
+  p {
+    text-align: center;
+    line-height: 24px;
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(220, 223, 223);
+    text-shadow: 3px 3px 3px black;
+    letter-spacing: 1px;
+ 
+  }
+}

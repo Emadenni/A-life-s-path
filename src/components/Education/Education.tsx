@@ -124,7 +124,7 @@ const Education = () => {
             <li>
               JAVASCRIPTUTVECKLARE:
               <br />
-              <span>YH/Göteborgsfolkusiversitet (it will end June 2025)</span>
+              <span>YH/Göteborgsfolkusiversitet (till June 2025)</span>
             </li>
           </ul>
           {currentSection === 3 && (
