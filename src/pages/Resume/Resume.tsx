@@ -8,6 +8,7 @@ import Skills from "../../components/Skills/Skills";
 import Portfolio from "../../components/Portfolio/Portfolio";
 import Extra from "../../components/Extra/Extra";
 import useSidebarStore from "../../Store/store";
+import Chat from "../../Chat";
 
 const Resume = () => {
   const [selectedComponent, setSelectedComponent] = useState("AboutMe");
@@ -30,7 +31,9 @@ const Resume = () => {
         {selectedComponent === "Portfolio" && <Portfolio />}
         {selectedComponent === "Extra" && <Extra />}
       </div>
+      <Chat />
     </div>
+  
   );
 };
 

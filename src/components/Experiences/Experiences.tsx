@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Frame from "../Frame/Frame";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import coursePlan from "../../assets/images/course-plan.png";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "./experiences.scss";
 

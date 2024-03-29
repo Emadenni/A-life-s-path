@@ -15,21 +15,65 @@
   padding: 0px;
   gap: 6px;
   @include flex(column, center, center);
-  img {
-    width: 100px;
-    transform: translate(-300px, -80px);
-  }
+}
 
+#scroll-down-arrow-extra {
+  position: absolute;
+  bottom: 10px;
+  right: 380px;
+  cursor: pointer;
+  animation: bounce 1s infinite alternate;
+  color: white;
+  font-size: 36px;
+}
+
+#scroll-up-arrow-extra {
+  position: absolute;
+  bottom: 470px;
+  right: 405px;
+  cursor: pointer;
+  animation: bounce 1s infinite alternate;
+  color: white;
+  font-size: 36px;
+}
+
+.comfort-zone-img {
+  border-radius: 8px;
+}
+.tastes-img {
+  border-radius: 8px;
+}
+
+.section1-extra {
+  @include flex(column, space-around, center);
+  gap: 35px;
+  margin-top: -20px;
   p {
     text-align: center;
     line-height: 24px;
-    padding: 30px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 20px;
     font-weight: 400;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(220, 223, 223);
     text-shadow: 3px 3px 3px black;
     letter-spacing: 1px;
- 
+  }
+}
+
+.section2-extra {
+  @include flex(column, space-around, center);
+  gap: 35px;
+  margin-top: 20px;
+  p {
+    text-align: center;
+    line-height: 24px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(220, 223, 223);
+    text-shadow: 3px 3px 3px black;
+    letter-spacing: 1px;
   }
 }
