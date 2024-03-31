@@ -10,7 +10,7 @@ const AboutMe = (props: Props) => {
     <div className="aboutMe-wrapper">
       <Frame
         borderColor=" rgb(0, 0, 255, 0.02)"
-        backgroundColor=" rgb(0, 0, 255, 0.03)"
+        backgroundColor=" rgb(0, 0, 255, 0.06)"
         title="About me"
         textDecorationColor="#0000ff99"
       />

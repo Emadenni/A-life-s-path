@@ -3,8 +3,8 @@
 .resume-container {
   width: 69.563rem;
   height: 41.75rem;
-  background-image: url(../../assets/images/ResumeCover.jpg);
-  background-position: center;
+  background-image: url(../../assets/images/resumeBkg.png);
+  background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -14,7 +14,7 @@
   overflow: hidden;
   opacity: 0;
   animation: fadeIn 2s forwards;
-  box-shadow: -1px 10px 75px 25px  rgba(60, 59, 59, 0.5);
+  box-shadow: -1px 10px 75px 25px rgba(60, 59, 59, 0.5);
 }
 
 @keyframes fadeIn {
@@ -24,9 +24,3 @@
     opacity: 1;
   }
 }
-
-/* .sidebar-open{
-opacity: 0.02;
-background-color: rgba(0, 0, 0, 0.5);
-
-} */

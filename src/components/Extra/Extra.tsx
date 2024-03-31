@@ -21,10 +21,10 @@ const Extra: React.FC = () => {
         <section className="section1-extra">
           
           <p>
-            <strong>MY COMFORT ZONE:</strong> First and foremost, I am the father of{" "}
+            <strong>MY COMFORT ZONE:</strong> First and foremost, I am the proud father of{" "}
             <span className="lightRed">Martin</span> (7 years old) and<span className="lightRed"> Anastasia </span>(3
             years old), as well as the husband of <span className="lightRed">Marija</span>. Additionally,
-            <span className="lightRed"> Kaya </span> has recently joined us, a wonderful female Labrador. Ours is a
+            <span className="lightRed"> Kaya </span>, a wonderful female Labrador, has recently joined us, . Ours is a
             multicultural family; I am Italian, my wife is North Macedonian, we live in Sweden, but we primarily speak
             English among ourselves, and we ensure that this is an added value.
           </p>

@@ -180,7 +180,7 @@ const Experiences = () => {
     <div className="experiences-wrapper">
       <Frame
         borderColor=" rgba(4, 90, 4, 0.02)"
-        backgroundColor=" rgba(4, 90, 4, 0.038)"
+        backgroundColor=" rgba(4, 90, 4, 0.024)"
         title="Experiences"
         textDecorationColor="#045a0499"
       />
