@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Frame from "../Frame/Frame";
 import "./skills.scss";
 import softSkills from "../../assets/images/soft-skills.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -238,12 +237,6 @@ const Skills: React.FC = () => {
 
   return (
     <div className="skills-wrapper">
-      <Frame
-        borderColor=" rgba(215, 93, 18, 0.02"
-        backgroundColor=" rgba(215, 93, 18, 0.04"
-        title="Skills"
-        textDecorationColor="#d75d1299"
-      />
       <div className="skills-container">
         {sections.map((section, index) => (
           <React.Fragment key={index}>{index === currentSection && section.content}</React.Fragment>

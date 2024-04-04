@@ -1,26 +1,22 @@
 @use "../../../sass/" as *;
 
-.aboutMe-wrapper {
-  position: relative;
-}
-
 .aboutMe-container {
-  width: 850px;
-  height: 500px;
-  position: absolute;
-  top: 110px;
-  left: 95px;
-  right: 0;
-  bottom: 0;
-  padding: 20px;
+  min-width: 100%;
+  min-height: 500px;
+  padding: 0px;
   gap: 10px;
   @include flex(column, center, center);
-  img {
-    width: 100px;
-    transform: translate(-300px, -80px);
+
+  &__text {
+    @include flex(column, center, center);
+    gap: 60px;
   }
 
+  img {
+    width: 100px;
+  }
   p {
+    max-width: 100%;
     text-align: center;
     line-height: 24px;
     padding: 30px;
@@ -36,7 +32,7 @@
   ul {
     letter-spacing: 0.2;
     line-height: 28px;
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 15px;
     list-style-type: none;
     font-size: 20px;
@@ -45,32 +41,34 @@
     color: rgb(220, 223, 223);
     text-shadow: 3px 3px 3px black;
     @include flex(default, center, center);
-    gap: 205px;
+    gap: 2.05vw; // Modifica il gap in viewport width
+    max-width: 800px; // Specifica una larghezza massima per evitare che l'elenco diventi troppo largo
+    margin-top: 20px;
+
     li {
       color: rgb(136, 169, 169);
       font-size: 24px;
-        letter-spacing: 0.8px;
+      letter-spacing: 0.8px;
+
       span {
         font-size: 18px;
         color: white;
 
         a {
-            text-decoration: underline;
-            cursor: pointer;
-            color: rgb(95, 204, 234);
+          text-decoration: underline;
+          cursor: pointer;
+          color: rgb(95, 204, 234);
         }
       }
     }
   }
 }
 
-.listPart2, .listPart1 {
-    text-align: center;
-    @include flex(column, center
-    );
-    gap:2px
-
-   
+.listPart2,
+.listPart1 {
+  text-align: center;
+  @include flex(column, center);
+  gap: 2px;
 }
 
 .lightRed {

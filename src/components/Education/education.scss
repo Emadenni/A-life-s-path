@@ -1,35 +1,24 @@
 @use "../../../sass/" as *;
 
-.education-wrapper {
-  position: relative;
-  min-height: 500px;
-}
-
 .education-container {
   animation: slideUp 0.5s forwards;
   overflow: hidden;
   background-color: transparent;
-  width: 850px;
+  max-width:100%;
   min-height: 500px;
-  position: absolute;
-  top: 110px;
-  left: 95px;
-  right: 0;
-  bottom: 0;
-  padding: 20px;
-  gap: 10px;
+ 
   @include flex(column, center, center);
   p {
     text-align: center;
     line-height: 24px;
-    padding: 30px;
+    padding: 40px;
     font-size: 20px;
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(220, 223, 223);
     text-shadow: 3px 3px 3px black;
     letter-spacing: 1px;
-    margin-top: -80px;
+  
   }
   ul {
     letter-spacing: 0.2;
@@ -60,6 +49,8 @@
   section {
     margin-top: 10px;
     animation: slideUp 0.08s forwards;
+    @include flex(column,center,center);
+    gap:10px;
   }
 }
 
@@ -72,29 +63,24 @@
   }
 }
 
-#scroll-down-arrow {
-  position: absolute;
-  bottom: -50px;
-  right: 380px;
+.scroll-down-arrow {
   cursor: pointer;
   animation: bounce 1s infinite alternate;
   color: white;
   font-size: 36px;
 }
-#scroll-down-arrow:hover {
+.scroll-down-arrow:hover {
   scale: 1.1;
   color: yellow;
 }
-#scroll-up-arrow {
-  position: absolute;
-  top: -99px;
-  right: 395px;
-  cursor: pointer;
+.scroll-up-arrow {
+cursor: pointer;
   animation: bounce 1s infinite alternate;
   color: white;
   font-size: 36px;
+  margin-bottom: 10px;
 }
-#scroll-up-arrow:hover {
+.scroll-up-arrow:hover {
   scale: 1.1;
   color: yellow;
 }
@@ -108,37 +94,17 @@
   }
 }
 
-#scroll-down-arrow-special {
-  position: absolute;
-  bottom: -30px;
-  right: 270px;
-  cursor: pointer;
-  animation: bounce 1s infinite alternate;
-  color: white;
-  font-size: 36px;
-}
-
-#scroll-down-arrow--special:hover {
-  scale: 1.1;
-  color: yellow;
-}
-#scroll-up-arrow-special {
-  position: absolute;
-  top: -99px;
-  right: 286px;
-  cursor: pointer;
-  animation: bounce 1s infinite alternate;
-  color: white;
-  font-size: 36px;
-}
-
-#scroll-up-arrow-special {
-  scale: 1.1;
-  color: yellow;
+.section5 {
+  width: 1050px;
 }
 
 .coursePlan-img {
-  width: 510px;
+  width: 810px;
   margin-left: 32px;
   border-radius: 10px;
 }
+
+.flex-container {
+  @include flex(column, center, center);
+}
+

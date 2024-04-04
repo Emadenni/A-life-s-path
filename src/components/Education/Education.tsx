@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Frame from "../Frame/Frame";
 import "./education.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
@@ -39,7 +38,7 @@ const Education = () => {
             </li>
           </ul>
           {currentSection === 0 && (
-            <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(1)} id="scroll-down-arrow" />
+            <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(1)} className="scroll-down-arrow" />
           )}
         </section>
       ),
@@ -48,6 +47,11 @@ const Education = () => {
       title: "Section 2",
       content: (
         <section className="section2">
+          {currentSection === 1 && (
+            <React.Fragment>
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(0)} className="scroll-up-arrow" />
+            </React.Fragment>
+          )}
           <p>
             Between 2020 and 2023, I undertook a course of study related to the Swedish language and culture through the
             following courses attended at CENTRUM FÖR VUXENUTBILDNING in Linköping:
@@ -74,8 +78,11 @@ const Education = () => {
           </ul>
           {currentSection === 1 && (
             <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(0)} id="scroll-up-arrow" />
-              <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(2)} id="scroll-down-arrow" />
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                onClick={() => setCurrentSection(2)}
+                className="scroll-down-arrow"
+              />
             </React.Fragment>
           )}
         </section>
@@ -85,6 +92,11 @@ const Education = () => {
       title: "Section 3",
       content: (
         <section className="section3">
+          {currentSection === 2 && (
+            <React.Fragment>
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(1)} className="scroll-up-arrow" />
+            </React.Fragment>
+          )}
           <p>
             Since 2022, I started to focus on IT and programming, initially as a self-learner. From February 2023
             onward, I embarked on an academic path through the following courses:
@@ -101,8 +113,11 @@ const Education = () => {
           </ul>
           {currentSection === 2 && (
             <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(1)} id="scroll-up-arrow" />
-              <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(3)} id="scroll-down-arrow" />
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                onClick={() => setCurrentSection(3)}
+                className="scroll-down-arrow"
+              />
             </React.Fragment>
           )}
         </section>
@@ -112,6 +127,11 @@ const Education = () => {
       title: "Section 4",
       content: (
         <section className="section4">
+          {currentSection === 3 && (
+            <React.Fragment>
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(2)} className="scroll-up-arrow" />
+            </React.Fragment>
+          )}
           <p>
             Since 2022, I started to focus on IT and programming, initially as a self-learner. From February 2023
             onward, I embarked on an academic path through the following courses:
@@ -129,8 +149,11 @@ const Education = () => {
           </ul>
           {currentSection === 3 && (
             <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(2)} id="scroll-up-arrow" />
-              <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(4)} id="scroll-down-arrow" />
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                onClick={() => setCurrentSection(4)}
+                className="scroll-down-arrow"
+              />
             </React.Fragment>
           )}
         </section>
@@ -140,12 +163,20 @@ const Education = () => {
       title: "Section 5",
       content: (
         <section className="section5">
+          {currentSection === 4 && (
+            <React.Fragment>
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(3)} className="scroll-up-arrow" />
+            </React.Fragment>
+          )}
           <p>Courses included in my current YH's education:</p>
           <img src={coursePlan} alt="course-plan" className="coursePlan-img" />
           {currentSection === 4 && (
             <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(3)} id="scroll-up-arrow-special" />
-              <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(5)} id="scroll-down-arrow-special" />
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                onClick={() => setCurrentSection(5)}
+                className="scroll-down-arrow"
+              />
             </React.Fragment>
           )}
         </section>
@@ -155,6 +186,11 @@ const Education = () => {
       title: "Section 6",
       content: (
         <section className="section6">
+          {currentSection === 5 && (
+            <React.Fragment>
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(4)} className="scroll-up-arrow" />
+            </React.Fragment>
+          )}
           <p>At the end of the education I will be qualified to cover the following positions:</p>
           <ul>
             <li>Backend developer with JavaScript</li>
@@ -164,29 +200,16 @@ const Education = () => {
             <li>IT consultant system development</li>
             <li>IT consultant web and multimedia</li>
           </ul>
-          {currentSection === 5 && (
-            <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(4)} id="scroll-up-arrow"  />
-            </React.Fragment>
-          )}
         </section>
       ),
     },
   ];
 
   return (
-    <div className="education-wrapper">
-      <Frame
-        borderColor="  rgba(191, 25, 25, 0.02)"
-        backgroundColor="  rgba(191, 25, 25, 0.04)"
-        title="Education"
-        textDecorationColor="#bf191999"
-      />
-      <div className="education-container">
-        {sections.map((section, index) => (
-          <React.Fragment key={index}>{index === currentSection && section.content}</React.Fragment>
-        ))}
-      </div>
+    <div className="education-container">
+      {sections.map((section, index) => (
+        <React.Fragment key={index}>{index === currentSection && section.content}</React.Fragment>
+      ))}
     </div>
   );
 };

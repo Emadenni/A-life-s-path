@@ -2,13 +2,13 @@
 
 .frame-container {
   border: solid 10px;
-  z-index: 50000;
-  width: 940px;
-  height: 640px;
-  margin-left: 50px;
+ 
+  max-width: 1040px;
+  min-height: 100%;
+  
   text-align: center;
   padding-top: 10px;
-  
+  @include flex(column,center,center)
   
 }
 

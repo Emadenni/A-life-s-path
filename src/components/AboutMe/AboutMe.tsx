@@ -1,28 +1,24 @@
-import React from "react";
-import Frame from "../Frame/Frame";
 import "./aboutMe.scss";
 import profilePic from "../../assets/images/profilePic.jpg";
 
-type Props = {};
 
-const AboutMe = (props: Props) => {
+
+const AboutMe = () => {
   return (
-    <div className="aboutMe-wrapper">
-      <Frame
-        borderColor=" rgb(0, 0, 255, 0.02)"
-        backgroundColor=" rgb(0, 0, 255, 0.06)"
-        title="About me"
-        textDecorationColor="#0000ff99"
-      />
+   
+  
       <div className="aboutMe-container">
-        <img src={profilePic} alt="profile" />
+        <div className="aboutMe-container__text" >
+         <img src={profilePic} alt="profile" />
         <p>
+       
           My name is Emanuele De Negri, I am 37 years old, and I have recently embarked on my journey in the world of
           web development and programming. <br /> <br /> My goal is to dedicate as much time as possible to this great
           passion and turn it into a full-fledged career. The means I am using to achieve my goal include
           <span className="lightRed"> skill development</span>,<span className="lightRed"> perseverance</span>,
           <span className="lightRed"> humility</span> and a <span className="lightRed">thirst for knowledge</span>.
         </p>
+        </div>
         <ul>
           <div className="listPart1">
             <li>
@@ -58,7 +54,7 @@ const AboutMe = (props: Props) => {
           </div>
         </ul>
       </div>
-    </div>
+    
   );
 };
 

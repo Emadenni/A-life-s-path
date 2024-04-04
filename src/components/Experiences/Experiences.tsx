@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Frame from "../Frame/Frame";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-free/css/all.css";
@@ -178,12 +177,7 @@ const Experiences = () => {
 
   return (
     <div className="experiences-wrapper">
-      <Frame
-        borderColor=" rgba(4, 90, 4, 0.02)"
-        backgroundColor=" rgba(4, 90, 4, 0.024)"
-        title="Experiences"
-        textDecorationColor="#045a0499"
-      />
+     
       <div className="experiences-container">
         {sections.map((section, index) => (
           <React.Fragment key={index}>{index === currentSection && section.content}</React.Fragment>

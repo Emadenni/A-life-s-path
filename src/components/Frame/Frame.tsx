@@ -1,22 +1,21 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./frame.scss";
-import useSidebarStore from "../../Store/store";
 
 interface FrameProps {
   borderColor: string;
-  title: string;
   backgroundColor: string;
-  textDecorationColor:string;
+  title: string;
+  textDecorationColor: string;
+  children?: ReactNode; // Includiamo children nell'interfaccia
 }
 
-const Frame: React.FC<FrameProps> = ({ borderColor, title, backgroundColor, textDecorationColor}) => {
-  const { isOpen } = useSidebarStore();
-  const blurStyle = isOpen ? { filter: "blur(5px)" } : {};
-    return (
-      <div className="frame-container" style={{ borderColor, backgroundColor,...blurStyle}}>
-        <h1 style={{ textDecorationColor }}>{title}</h1>
-      </div>
-    );
-  };
+const Frame: React.FC<FrameProps> = ({ borderColor, backgroundColor, title, textDecorationColor, children }) => {
+  return (
+    <div className="frame-container" style={{ borderColor, backgroundColor }}>
+      <h1 style={{ textDecorationColor: textDecorationColor }}>{title}</h1>
+      {children}
+    </div>
+  );
+};
 
 export default Frame;

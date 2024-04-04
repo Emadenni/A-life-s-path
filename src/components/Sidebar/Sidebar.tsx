@@ -46,7 +46,7 @@ const Sidebar = ({ onSelectComponent }: Props) => {
           {isOpen ? "<<" : ">>"}
         </button>
         <div className={` ${isOpen ? "overlay" : "hidden"}`}>
-          <img src={logoALP} alt="logo" />
+          <img src={logoALP} alt="logo"/>
         </div>
       </div>
     </>
