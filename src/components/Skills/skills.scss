@@ -1,21 +1,11 @@
 @use "../../../sass/" as *;
 
-.skills-wrapper {
-  position: relative;
-  min-height: 500px;
-}
-
 .skills-container {
   animation: slideUp 0.5s forwards;
   overflow: hidden;
   background-color: transparent;
-  width: 850px;
+  max-width: 100%;
   min-height: 500px;
-  position: absolute;
-  top: 40px;
-  left: 120px;
-  right: 0;
-  bottom: 0;
   padding: 20px;
   gap: 10px;
   @include flex(column, center, center);
@@ -29,7 +19,7 @@
     color: rgb(220, 223, 223);
     text-shadow: 3px 3px 3px black;
     letter-spacing: 1px;
-    margin-top: -80px;
+
   }
   ul {
     letter-spacing: 0.2;
@@ -56,10 +46,12 @@
       }
     }
   }
-
   section {
+    min-width: 1050px;
     margin-top: 10px;
     animation: slideUp 0.08s forwards;
+    @include flex(column, center, center);
+    gap: 10px;
   }
 }
 
@@ -72,55 +64,26 @@
   }
 }
 
-#scroll-down-arrow {
-  position: absolute;
-  bottom: -50px;
-  right: 385px;
+.scroll-down-arrow {
   cursor: pointer;
   animation: bounce 1s infinite alternate;
   color: white;
   font-size: 36px;
 }
-#scroll-down-arrow-itSkills {
-  position: absolute;
-  bottom: -33px;
-  right: 256px;
-  cursor: pointer;
-  animation: bounce 1s infinite alternate;
-  color: white;
-  font-size: 36px;
-}
-#scroll-down-arrow:hover {
+
+.scroll-down-arrow:hover {
   scale: 1.1;
   color: yellow;
 }
-#scroll-down-arrow-itSkills:hover {
-  scale: 1.1;
-  color: yellow;
-}
-#scroll-up-arrow {
-  position: absolute;
-  top: -99px;
-  right: 395px;
+
+.scroll-up-arrow {
   cursor: pointer;
   animation: bounce 1s infinite alternate;
   color: white;
   font-size: 36px;
 }
-#scroll-up-arrow-itSkills  {
-  position: absolute;
-  top: -50px;
-  right: 260px;
-  cursor: pointer;
-  animation: bounce 1s infinite alternate;
-  color: white;
-  font-size: 36px;
-}
-#scroll-up-arrow:hover {
-  scale: 1.1;
-  color: yellow;
-}
-#scroll-up-arrow-itSkills :hover {
+
+.scroll-up-arrow:hover {
   scale: 1.1;
   color: yellow;
 }
@@ -131,7 +94,7 @@
   }
   100% {
     transform: translateY(12px);
-    color: rgb(127, 255, 212,0.5);
+    color: rgb(127, 255, 212, 0.5);
   }
 }
 
@@ -163,22 +126,21 @@
   }
 }
 .card:hover {
-
   background-color: rgb(240, 248, 255, 0.5);
 }
 
-.section2-skills  {
-  margin-left: -60px;
+.section2-skills {
+  width: 80%;
   @include flex(default, space-around, center);
   gap: 90px;
-  background-color: rgb(240, 248, 255,0.05);
+  background-color: rgb(240, 248, 255, 0.05);
   padding: 12px 10px 10px 5px;
   h2 {
     font-family: $primary-font;
     font-size: 40px;
     font-weight: 100;
     text-align: center;
-    color:rgb(196, 205, 15,0.8);
+    color: rgb(196, 205, 15, 0.8);
     letter-spacing: 0.9px;
   }
 }

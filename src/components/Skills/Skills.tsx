@@ -144,7 +144,7 @@ const Skills: React.FC = () => {
           <img src={softSkills} alt="soft-skills" />
 
           {currentSection === 0 && (
-            <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(1)} id="scroll-down-arrow" />
+            <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(1)} className="scroll-down-arrow" />
           )}
         </section>
       ),
@@ -152,30 +152,35 @@ const Skills: React.FC = () => {
     {
       title: "Section 2",
       content: (
-        <section className="section2-skills">
-          <h2>It skills</h2>
-          <div className="cards-container">
-            {cards.map((card, index) => (
-              <div
-                key={index}
-                className="card"
-                onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={() => handleMouseLeave(index)}
-              >
-                <img src={card.imageUrl} alt="Immagine" />
-                <h3>{card.title}</h3>
-                {showDescription[index] && <p className="description">{card.description}</p>}
-              </div>
-            ))}
-          </div>
-
+        <section>
           {currentSection === 1 && (
             <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(0)} id="scroll-up-arrow-itSkills" />
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(0)} className="scroll-up-arrow" />
+            </React.Fragment>
+          )}
+          <div className="section2-skills">
+            <h2>It skills</h2>
+            <div className="cards-container">
+              {cards.map((card, index) => (
+                <div
+                  key={index}
+                  className="card"
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={() => handleMouseLeave(index)}
+                >
+                  <img src={card.imageUrl} alt="Immagine" />
+                  <h3>{card.title}</h3>
+                  {showDescription[index] && <p className="description">{card.description}</p>}
+                </div>
+              ))}
+            </div>
+          </div>
+          {currentSection === 1 && (
+            <React.Fragment>
               <FontAwesomeIcon
                 icon={faChevronDown}
                 onClick={() => setCurrentSection(2)}
-                id="scroll-down-arrow-itSkills"
+                className="scroll-down-arrow"
               />
             </React.Fragment>
           )}
@@ -186,6 +191,11 @@ const Skills: React.FC = () => {
       title: "Section 3",
       content: (
         <section className="section3">
+          {currentSection === 2 && (
+            <React.Fragment>
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(1)} className="scroll-up-arrow" />
+            </React.Fragment>
+          )}
           <p>
             EXTRA SKILLS: Throughout my years of work, I have developed considerable experience in driving various types
             of forklifts and operating an overhead crane.
@@ -197,8 +207,11 @@ const Skills: React.FC = () => {
 
           {currentSection === 2 && (
             <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(1)} id="scroll-up-arrow" />
-              <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(3)} id="scroll-down-arrow" />
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                onClick={() => setCurrentSection(3)}
+                className="scroll-down-arrow"
+              />
             </React.Fragment>
           )}
         </section>
@@ -208,6 +221,11 @@ const Skills: React.FC = () => {
       title: "Section 4",
       content: (
         <section className="section4">
+          {currentSection === 3 && (
+            <React.Fragment>
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(2)} className="scroll-up-arrow" />
+            </React.Fragment>
+          )}
           <p>
             LANGUAGES: Besides Italian, my mother tongue, I speak Swedish at a good level, which I use in everyday life
             and have deepened through some previously mentioned courses, as well as English, which I studied in high
@@ -224,24 +242,16 @@ const Skills: React.FC = () => {
               Swedish<span> (fluent)</span>
             </li>
           </ul>
-
-          {currentSection === 3 && (
-            <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(2)} id="scroll-up-arrow" />
-            </React.Fragment>
-          )}
         </section>
       ),
     },
   ];
 
   return (
-    <div className="skills-wrapper">
-      <div className="skills-container">
-        {sections.map((section, index) => (
-          <React.Fragment key={index}>{index === currentSection && section.content}</React.Fragment>
-        ))}
-      </div>
+    <div className="skills-container">
+      {sections.map((section, index) => (
+        <React.Fragment key={index}>{index === currentSection && section.content}</React.Fragment>
+      ))}
     </div>
   );
 };
