@@ -16,7 +16,7 @@ const Chat: React.FC = () => {
     };
   }, []);
 
-  return null; // Questo componente non renderizza nulla visibile
+  return null; 
 };
 
 export default Chat;

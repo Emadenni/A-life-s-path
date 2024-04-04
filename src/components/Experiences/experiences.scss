@@ -1,23 +1,12 @@
 @use "../../../sass/" as *;
 
-.experiences-wrapper {
-  position: relative;
-  min-height: 500px;
-}
-
 .experiences-container {
   animation: slideUp 0.5s forwards;
-  overflow: hidden;
+
   background-color: transparent;
-  width: 850px;
+  max-width: 100%;
   min-height: 500px;
-  position: absolute;
-  top: 110px;
-  left: 95px;
-  right: 0;
-  bottom: 0;
-  padding: 20px;
-  gap: 10px;
+
   @include flex(column, center, center);
   p {
     text-align: center;
@@ -29,7 +18,6 @@
     color: rgb(220, 223, 223);
     text-shadow: 3px 3px 3px black;
     letter-spacing: 1px;
-    margin-top: -80px;
   }
   ul {
     letter-spacing: 0.2;
@@ -60,7 +48,8 @@
   section {
     margin-top: 10px;
     animation: slideUp 0.08s forwards;
-    
+    @include flex(column, center, center);
+    gap: 10px;
     a {
       color: rgb(169, 174, 172);
     }
@@ -76,29 +65,23 @@
   }
 }
 
-#scroll-down-arrow {
-  position: absolute;
-  bottom: -50px;
-  right: 380px;
+.scroll-down-arrow {
   cursor: pointer;
   animation: bounce 1s infinite alternate;
   color: white;
   font-size: 36px;
 }
-#scroll-down-arrow:hover {
+.scroll-down-arrow:hover {
   scale: 1.1;
   color: yellow;
 }
-#scroll-up-arrow {
-  position: absolute;
-  top: -99px;
-  right: 395px;
+.scroll-up-arrow {
   cursor: pointer;
   animation: bounce 1s infinite alternate;
   color: white;
   font-size: 36px;
 }
-#scroll-up-arrow:hover {
+.scroll-up-arrow:hover {
   scale: 1.1;
   color: yellow;
 }
@@ -110,14 +93,6 @@
   100% {
     transform: translateY(15px);
     scale: 1.2;
-    color: rgb(0, 255, 255,0.4);
+    color: rgb(0, 255, 255, 0.4);
   }
 }
-
-
-.coursePlan-img {
-  width: 510px;
-  margin-left: 32px;
-  border-radius: 10px;
-}
-

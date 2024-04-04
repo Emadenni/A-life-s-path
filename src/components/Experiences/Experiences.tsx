@@ -23,7 +23,7 @@ const Experiences = () => {
           </p>
 
           {currentSection === 0 && (
-            <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(1)} id="scroll-down-arrow" />
+            <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(1)} className="scroll-down-arrow" />
           )}
         </section>
       ),
@@ -32,6 +32,11 @@ const Experiences = () => {
       title: "Section 2",
       content: (
         <section className="section2">
+          {currentSection === 1 && (
+            <React.Fragment>
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(0)} className="scroll-up-arrow" />
+            </React.Fragment>
+          )}
           <p>
             TOURISM - Having grown up in a renowned Italian tourist area (Riviera Romagnola), I have been employed for
             several years in the tourism sector. Specifically, I have gained experience as a <strong> bartender</strong>
@@ -58,8 +63,11 @@ const Experiences = () => {
           </ul>
           {currentSection === 1 && (
             <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(0)} id="scroll-up-arrow" />
-              <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(2)} id="scroll-down-arrow" />
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                onClick={() => setCurrentSection(2)}
+                className="scroll-down-arrow"
+              />
             </React.Fragment>
           )}
         </section>
@@ -69,6 +77,11 @@ const Experiences = () => {
       title: "Section 3",
       content: (
         <section className="section3">
+          {currentSection === 2 && (
+            <React.Fragment>
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(1)} className="scroll-up-arrow" />
+            </React.Fragment>
+          )}
           <p>
             ENTERTAINMENT: In 2009, almost by chance, I found myself in the world of gaming and entertainment. I was
             hired at the BINGO Beach and Beach in Riccione (Italy) as a <strong>waiter</strong>, later emerging as the{" "}
@@ -85,8 +98,11 @@ const Experiences = () => {
           </ul>
           {currentSection === 2 && (
             <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(1)} id="scroll-up-arrow" />
-              <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(3)} id="scroll-down-arrow" />
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                onClick={() => setCurrentSection(3)}
+                className="scroll-down-arrow"
+              />
             </React.Fragment>
           )}
         </section>
@@ -96,6 +112,11 @@ const Experiences = () => {
       title: "Section 4",
       content: (
         <section className="section4">
+          {currentSection === 3 && (
+            <React.Fragment>
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(2)} className="scroll-up-arrow" />
+            </React.Fragment>
+          )}
           <p>
             CONSTRUCTION: Another significant chapter in my work life has been in construction. At the age of 20, I
             worked as a <strong>naval plumber</strong> in the production of Ferretti Custom Line 97' yachts for
@@ -118,8 +139,11 @@ const Experiences = () => {
           </ul>
           {currentSection === 3 && (
             <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(2)} id="scroll-up-arrow" />
-              <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(4)} id="scroll-down-arrow" />
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                onClick={() => setCurrentSection(4)}
+                className="scroll-down-arrow"
+              />
             </React.Fragment>
           )}
         </section>
@@ -129,6 +153,11 @@ const Experiences = () => {
       title: "Section 5",
       content: (
         <section className="section5">
+          {currentSection === 4 && (
+            <React.Fragment>
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(3)} className="scroll-up-arrow" />
+            </React.Fragment>
+          )}
           <p>
             NOW: At this moment, I am oriented in the field of IT, trying to channel as much energy as possible into
             turning a great passion into a profession. In the meantime, to support myself financially, I work the night
@@ -148,8 +177,11 @@ const Experiences = () => {
           </ul>
           {currentSection === 4 && (
             <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(3)} id="scroll-up-arrow" />
-              <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(5)} id="scroll-down-arrow" />
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                onClick={() => setCurrentSection(5)}
+                className="scroll-down-arrow"
+              />
             </React.Fragment>
           )}
         </section>
@@ -159,30 +191,28 @@ const Experiences = () => {
       title: "Section 6",
       content: (
         <section className="section6">
-          <p>
-            I would like to repeat that I have selected the experiences that I considered most relevant. At the same
-            time I would like to point out that <strong>every single experience</strong>, even the most insignificant, has enriched me in
-            his own way. <br /> <br /> <strong>The work in general has definitely shaped my character a lot.</strong> 
-          </p> <br /> <br />
-          
           {currentSection === 5 && (
             <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(4)} id="scroll-up-arrow" />
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(4)} className="scroll-up-arrow" />
             </React.Fragment>
           )}
+          <p>
+            I would like to repeat that I have selected the experiences that I considered most relevant. At the same
+            time I would like to point out that <strong>every single experience</strong>, even the most insignificant,
+            has enriched me in his own way. <br /> <br />{" "}
+            <strong>The work in general has definitely shaped my character a lot.</strong>
+          </p>{" "}
+          <br /> <br />
         </section>
       ),
     },
   ];
 
   return (
-    <div className="experiences-wrapper">
-     
-      <div className="experiences-container">
-        {sections.map((section, index) => (
-          <React.Fragment key={index}>{index === currentSection && section.content}</React.Fragment>
-        ))}
-      </div>
+    <div className="experiences-container">
+      {sections.map((section, index) => (
+        <React.Fragment key={index}>{index === currentSection && section.content}</React.Fragment>
+      ))}
     </div>
   );
 };

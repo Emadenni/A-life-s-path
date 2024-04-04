@@ -4,9 +4,8 @@
   animation: slideUp 0.5s forwards;
   overflow: hidden;
   background-color: transparent;
-  max-width:100%;
+  max-width: 100%;
   min-height: 500px;
- 
   @include flex(column, center, center);
   p {
     text-align: center;
@@ -18,7 +17,6 @@
     color: rgb(220, 223, 223);
     text-shadow: 3px 3px 3px black;
     letter-spacing: 1px;
-  
   }
   ul {
     letter-spacing: 0.2;
@@ -49,8 +47,8 @@
   section {
     margin-top: 10px;
     animation: slideUp 0.08s forwards;
-    @include flex(column,center,center);
-    gap:10px;
+    @include flex(column, center, center);
+    gap: 10px;
   }
 }
 
@@ -68,17 +66,18 @@
   animation: bounce 1s infinite alternate;
   color: white;
   font-size: 36px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .scroll-down-arrow:hover {
   scale: 1.1;
   color: yellow;
 }
 .scroll-up-arrow {
-cursor: pointer;
+  cursor: pointer;
   animation: bounce 1s infinite alternate;
   color: white;
   font-size: 36px;
-  margin-bottom: 10px;
 }
 .scroll-up-arrow:hover {
   scale: 1.1;
@@ -98,13 +97,14 @@ cursor: pointer;
   width: 1050px;
 }
 
-.coursePlan-img {
-  width: 810px;
-  margin-left: 32px;
-  border-radius: 10px;
-}
-
 .flex-container {
   @include flex(column, center, center);
+}
+
+
+.coursePlan-img {
+  width: 550px;
+  margin-left: 32px;
+  border-radius: 10px;
 }
 

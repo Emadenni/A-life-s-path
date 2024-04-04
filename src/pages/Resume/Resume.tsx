@@ -91,9 +91,10 @@ const Resume = () => {
           {selectedComponent === "Skills" && <Skills />}
           {selectedComponent === "Portfolio" && <Portfolio />}
           {selectedComponent === "Extra" && <Extra />}
+          <Chat />
         </Frame>
       </div>
-      <Chat />
+
     </div>
   );
 };
