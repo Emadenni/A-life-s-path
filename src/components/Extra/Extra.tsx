@@ -18,6 +18,7 @@ const Extra: React.FC = () => {
       title: "Section 1",
       content: (
         <section className="section1-extra">
+          <img src="https://picsum.photos/350/200" alt="pic" className="comfort-zone-img" />
           <p>
             <strong>MY COMFORT ZONE:</strong> First and foremost, I am the proud father of{" "}
             <span className="lightRed">Martin</span> (7 years old) and<span className="lightRed"> Anastasia </span>(3
@@ -26,10 +27,9 @@ const Extra: React.FC = () => {
             Ours is a multicultural family; I am Italian, my wife is North Macedonian, we live in Sweden, but we
             primarily speak English among ourselves, and we ensure that this is an added value.
           </p>
-          <img src="https://picsum.photos/350/200" alt="pic" className="comfort-zone-img" />
 
           {currentSection === 0 && (
-            <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(1)} id="scroll-down-arrow-extra" />
+            <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(1)} className="scroll-down-arrow" />
           )}
         </section>
       ),
@@ -37,7 +37,13 @@ const Extra: React.FC = () => {
     {
       title: "Section 2",
       content: (
-        <section className="section2-extra">
+        <section className="section2-extra-wrapper">
+           {currentSection === 1 && (
+            <React.Fragment>
+              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(0)} className="scroll-up-arrow" />
+            </React.Fragment>
+          )}
+          <div className="section2-extra">
           <p>
             <strong>WHAT I LIKE?:</strong> I am a big <span className="lightRed">football</span> lover and have played
             it for most of my life. I love <span className="lightRed"> music</span>, particularly progressive rock,
@@ -49,23 +55,18 @@ const Extra: React.FC = () => {
             with AI and graphics in general. Among other things, I like creating logos.
           </p>
           <Playlist />
-
-          {currentSection === 1 && (
-            <React.Fragment>
-              <FontAwesomeIcon icon={faChevronUp} onClick={() => setCurrentSection(0)} id="scroll-up-arrow-extra" />
-            </React.Fragment>
-          )}
+          </div>
+         
+         
         </section>
       ),
     },
   ];
   return (
-    <div className="extra-wrapper">
-      <div className="extra-container">
-        {sections.map((section, index) => (
-          <React.Fragment key={index}>{index === currentSection && section.content}</React.Fragment>
-        ))}
-      </div>
+    <div className="extra-container">
+      {sections.map((section, index) => (
+        <React.Fragment key={index}>{index === currentSection && section.content}</React.Fragment>
+      ))}
     </div>
   );
 };

@@ -1,57 +1,29 @@
 @use "../../../sass/" as *;
 
-.extra-wrapper {
-  position: relative;
-}
 
 .extra-container {
-  width: 850px;
+  max-width: 100%;
   min-height: 500px;
-  position: absolute;
-  top: 110px;
-  left: 95px;
-  right: 0;
-  bottom: 0;
-  padding: 0px;
   gap: 6px;
   @include flex(column, center, center);
 }
-
-#scroll-down-arrow-extra {
-  position: absolute;
-  bottom: 10px;
-  right: 380px;
-  cursor: pointer;
-  animation: bounce 1s infinite alternate;
-  color: white;
-  font-size: 36px;
-}
-
-#scroll-up-arrow-extra {
-  position: absolute;
-  bottom: 470px;
-  right: 405px;
-  cursor: pointer;
-  animation: bounce 1s infinite alternate;
-  color: white;
-  font-size: 36px;
-}
-
 .comfort-zone-img {
   border-radius: 8px;
 }
-.playlist{
+.playlist {
   border-radius: 8px;
   width: 300px;
   height: 352px;
-  border:none;
+  border: none;
 }
 
 .section1-extra {
   @include flex(column, space-around, center);
-  gap: 35px;
-  margin-top: -20px;
+  gap: 25px;
+  margin-top: 20px;
+
   p {
+    max-width: 90%;
     text-align: justify;
     line-height: 26px;
     padding: 10px;
@@ -61,6 +33,10 @@
     color: rgb(220, 223, 223);
     text-shadow: 3px 3px 3px black;
     letter-spacing: 1px;
+  }
+
+  img {
+    max-width: 400px;
   }
 }
 
@@ -81,3 +57,7 @@
   }
 }
 
+.section2-extra-wrapper {
+  @include flex(column, center,center);
+  padding: 20px;
+}
