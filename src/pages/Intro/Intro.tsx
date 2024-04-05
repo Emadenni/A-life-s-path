@@ -10,11 +10,11 @@ const Intro = () => {
   const navigate = useNavigate();
 
   const handleContinueButton = () => {
-    navigate("/resume");
+    navigate("/A-life-s-path/resume");
   }
 
   const handleHomeButton = ()=> {
-    navigate("/");
+    navigate("/A-life-s-path/");
   }
 
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import "./sidebar.scss";
 import useSidebarStore from "../../Store/store";
 import logoALP from "../../assets/images/logoALP.png";
@@ -46,7 +45,7 @@ const Sidebar = ({ onSelectComponent }: Props) => {
           {isOpen ? "<<" : ">>"}
         </button>
         <div className={` ${isOpen ? "overlay" : "hidden"}`}>
-          <img src={logoALP} alt="logo"/>
+          <img src={logoALP} alt="logo" />
         </div>
       </div>
     </>

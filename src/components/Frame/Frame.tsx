@@ -14,7 +14,7 @@ interface FrameProps {
 const Frame: React.FC<FrameProps> = ({ borderColor, backgroundColor, title, textDecorationColor, children }) => {
   const navigate = useNavigate();
   const handleHomeButton = () => {
-    navigate("/");
+    navigate("/A-life-s-path/");
   };
   return (
     <div className="frame-container" style={{ borderColor, backgroundColor }}>

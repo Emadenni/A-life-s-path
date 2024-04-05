@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./home.scss";
 import Button from '../../components/Button/Button';
@@ -7,7 +6,7 @@ const home = () => {
   const navigate = useNavigate();
 
   const handleStartButton = () => {
-    navigate("/intro");
+    navigate("/A-life-s-path/intro");
   }
 
   return (
