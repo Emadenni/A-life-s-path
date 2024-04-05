@@ -9,15 +9,15 @@ import "./main.scss";
 
 const router = createBrowserRouter([
   {
-    path: '/a-life-s-path/', // Aggiunto /A-life-s-path al percorso
+    path: '/A-life-s-path/', // Aggiunto /A-life-s-path al percorso
     element: <Home />,
   },
   {
-    path: '/a-life-s-path/intro', 
+    path: '/A-life-s-path/intro', 
     element: <Intro />,
   },
   {
-    path: '/a-life-s-path/resume', // Aggiunto /A-life-s-path al percorso
+    path: '/A-life-s-path/resume', // Aggiunto /A-life-s-path al percorso
     element: <Resume />,
   },
  
