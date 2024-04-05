@@ -4,6 +4,7 @@ import profilePic from "../../assets/images/profilePic.jpg";
 import profileName from "../../assets/images/profileName.png";
 import "./intro.scss";
 import Chat from '../../Chat';
+import homeIconVector from "../../assets/images/home-icon-vector.png"
 
 const Intro = () => {
   const navigate = useNavigate();
@@ -12,8 +13,13 @@ const Intro = () => {
     navigate("/resume");
   }
 
+  const handleHomeButton = ()=> {
+    navigate("/");
+  }
+
   return (
     <div className="intro-container">
+      <img src={homeIconVector} alt="icon" className='homeIconIntro' onClick={handleHomeButton} />
       <h1>Welcome!</h1>
       <div className="intro-container__box">
         <p>
@@ -21,6 +27,7 @@ const Intro = () => {
         </p>
       </div>
 
+      
       <Button customClassName="custom-button-intro" text="Continue" onClick={handleContinueButton} />
       <img src={profilePic} alt="profile-picture" className="intro-container__profilePic" />
       <img src={profileName} alt="profile-name" className="intro-container__profileName" />

@@ -1,11 +1,10 @@
 @use "./../../../sass/" as *;
 
 .resume-container {
-
   max-width: 90vw;
   min-height: 41.75rem;
   background-image: url(../../assets/images/resumeBkg.png);
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -25,3 +24,4 @@
     opacity: 1;
   }
 }
+

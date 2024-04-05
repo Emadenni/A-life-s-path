@@ -19,7 +19,6 @@ const Resume = () => {
     setSelectedComponent(componentName);
   };
 
-  // Definisci le props per il componente Frame in base al componente selezionato
   let frameProps = {};
   switch (selectedComponent) {
     case "AboutMe":
@@ -69,15 +68,15 @@ const Resume = () => {
     case "Extra":
       frameProps = {
         borderColor: " rgba(45, 9, 9, 0.02)",
-        backgroundColor: "  rgba(45, 9, 9, 0.04)",
+        backgroundColor: "  rgba(45, 9, 9, 0.2)",
         title: "Extra",
         textDecorationColor: "#2d0909e3",
       };
 
       break;
-    // Aggiungi altri casi per gli altri componenti selezionati
+
     default:
-      frameProps = {}; // Default props
+      frameProps = {};
   }
 
   return (
@@ -94,7 +93,6 @@ const Resume = () => {
           <Chat />
         </Frame>
       </div>
-
     </div>
   );
 };

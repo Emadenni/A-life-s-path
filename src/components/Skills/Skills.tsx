@@ -140,7 +140,7 @@ const Skills: React.FC = () => {
     {
       title: "Section 1",
       content: (
-        <section className="section1">
+        <section className="section1-skills">
           <img src={softSkills} alt="soft-skills" />
 
           {currentSection === 0 && (

@@ -36,6 +36,7 @@
     text-align: center;
     opacity: 0; 
     animation: fadeIn 5s forwards;
+    margin-bottom: 50px;
    
   }
 
@@ -59,4 +60,11 @@
     width: 230px;
     transform: translate(-440px, 300px);
   }
+}
+
+.homeIconIntro {
+  cursor: pointer;
+  width: 40px;
+  align-self: flex-end;
+  margin-right: 130px;
 }

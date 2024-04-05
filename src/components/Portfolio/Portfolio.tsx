@@ -69,7 +69,7 @@ const Portfolio: React.FC = () => {
       subtitle: "Vanilla JavaScript",
       kind: "Private Project",
       description:
-        "Kevin Fast Feast is a long-term private project. It involves creating a reel slot machine and implementing animations, also with the use of AI. The project was started in JavaScript, but my goal is to refactor it into React. Currently, it is still a work in progress.",
+        "Kevin Fast Feast is a long-term private project. It involves creating a reel slot machine and implementing animations, also with the use of AI. The project was started in vanilla JavaScript, but my goal is to refactor it into React. Currently, it is still a work in progress.",
       linkUrl: "https://github.com/Emadenni/KFF.git",
       deployUrl: "https://emadenni.github.io/KFF/",
     },

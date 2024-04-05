@@ -2,26 +2,29 @@
 
 .frame-container {
   border: solid 10px;
- 
+
   max-width: 1040px;
   min-height: 100%;
-  
+
   text-align: center;
   padding-top: 10px;
-  @include flex(column,center,center)
-  
+  @include flex(column, center, center);
 }
 
 h1 {
   font-family: $primary-font;
-/*   color: rgb(235, 229, 229); */
+  /*   color: rgb(235, 229, 229); */
   color: rgb(198, 229, 22);
   font-size: 50px;
   margin-top: 22px;
   font-style: italic;
   letter-spacing: 4px;
   text-decoration: overline;
-
 }
 
-
+.homeIconResume {
+  cursor: pointer;
+  width: 40px;
+  align-self: flex-end;
+  margin-right: 40px;
+}

@@ -50,7 +50,7 @@ const Extra: React.FC = () => {
             roots and dub reggae, electronic music and trip hop. I enjoy{" "}
             <span className="lightRed">TV series and movies</span>, with thriller and pulp being my preferred genres. I
             feel at ease in <span className="lightRed">nature</span>, enjoying taking care of the{" "}
-            <span className="lightRed">garden and hosting barbecue</span> gatherings. Occasionally, I indulge in cooking
+            <span className="lightRed">garden</span> and <span className="lightRed">hosting barbecue</span> gatherings. Occasionally, I indulge in cooking
             traditional dishes from my country. In the field of IT, aside from programming, I sometimes enjoy 'playing'
             with AI and graphics in general. Among other things, I like creating logos.
           </p>
