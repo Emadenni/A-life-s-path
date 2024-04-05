@@ -6,7 +6,7 @@ const home = () => {
   const navigate = useNavigate();
 
   const handleStartButton = () => {
-    navigate("/A-life-s-path/intro");
+    navigate("/intro");
   }
 
   return (
