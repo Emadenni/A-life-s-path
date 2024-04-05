@@ -15,13 +15,13 @@ return (
       <h3>{card.title}</h3>
       <h4>{card.subtitle}</h4>
       <img src={card.imageUrl} alt="pic" />
-      <p>{card.description}</p>
+      <p className="mainP">{card.description}</p>
       {card.deployUrl && (
         <React.Fragment>
-          <p>
+          <p className="links">
             Git Hub: <a href={card.linkUrl}>{card.linkUrl}</a>
           </p>
-          <p>
+          <p className="links">
             To the page: <a href={card.deployUrl}>{card.deployUrl}</a>
           </p>
         </React.Fragment>

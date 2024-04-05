@@ -112,8 +112,10 @@ const Portfolio: React.FC = () => {
   };
 
   return (
-    <div className="portfolio-wrapper">
-      <div className="portfolio-container">
+    <div className="portfolio-container">
+      {selectedCard ? (
+        <PortfolioDetails card={selectedCard} handleCloseButton={handleCloseButton} />
+      ) : (
         <ul>
           {portfolioCards.map((portfolioCard, index) => (
             <li key={index} className="portfolioCard" onClick={() => handleCardClick(portfolioCard)}>
@@ -124,8 +126,7 @@ const Portfolio: React.FC = () => {
             </li>
           ))}
         </ul>
-      </div>
-      {selectedCard && <PortfolioDetails card={selectedCard} handleCloseButton={handleCloseButton} />}
+      )}
     </div>
   );
 };

@@ -1,26 +1,18 @@
 @use "../../../sass/" as *;
 
-.portfolio-wrapper {
-  position: relative;
-  min-height: 500px;
-}
-
 .portfolio-container {
   animation: slideUp 0.5s forwards;
   @include flex(default, center, center);
-
-  width: 850px;
+  margin-top: 20px;
+  max-width: 1050px;
   min-height: 500px;
-  position: absolute;
-  top: 110px;
-  left: 95px;
-  right: 0;
-  bottom: 0;
   padding: 20px;
 
   ul {
     letter-spacing: 0.2;
-    width: 850px;
+    padding: 0 90px;
+    max-width: 1050px;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
@@ -52,7 +44,7 @@
   }
 
   img {
-    width: 160px;
+    max-width: 160px;
     height: 120px;
     margin-top: 10px;
     border-radius: 5px;
@@ -65,24 +57,22 @@
 }
 
 .portfolioCard:hover {
-  scale: 1.05;
+  scale: 1.005;
   background-color: rgb(15, 16, 13);
 }
 
 .portfolioCard-details {
   font-family: $primary-font;
-  position: absolute;
-  top: 125px;
-  left: 116px;
   cursor: pointer;
   border-radius: 10px;
   border: solid 3px rgb(196, 87, 196, 0.3);
   background-color: rgba(187, 180, 180, 0.96);
-  width: 805px;
-  height: 500px;
+  max-width: 80%;
+  min-height: 500px;
+  max-height: 1200px;
   padding: 16px;
   @include flex(column, space-around, center);
-  
+
   h3 {
     font-size: 50px;
     margin-top: -18px;
@@ -94,17 +84,20 @@
   }
 
   img {
-    width: 400px;
-    height: 230px;
+    min-width: 200px;
+    max-width: 60%;
+   max-height: 230px;
+
 
     border-radius: 5px;
   }
 
-  p {
+  .mainP {
     font-size: 14px;
     margin-bottom: 2px;
     margin-top: 3px;
     text-align: justify;
+    padding: 6px;
   }
 
   button {
@@ -119,4 +112,9 @@
     border: none;
     border-radius: 5px;
   }
+}
+
+.links {
+  padding: 20px;
+  font-size: 12px;
 }
