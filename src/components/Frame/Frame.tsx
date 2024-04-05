@@ -8,7 +8,7 @@ interface FrameProps {
   backgroundColor: string;
   title: string;
   textDecorationColor: string;
-  children?: ReactNode; // Includiamo children nell'interfaccia
+  children?: ReactNode;
 }
 
 const Frame: React.FC<FrameProps> = ({ borderColor, backgroundColor, title, textDecorationColor, children }) => {
