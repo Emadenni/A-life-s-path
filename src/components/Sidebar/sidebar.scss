@@ -1,0 +1,107 @@
+@use "./../../../sass/" as *;
+
+.sidebar-wrapper {
+
+  @include flex(default, center, center);
+  transition: left 0.5s;
+  z-index: 3000;
+}
+
+.sidebar-container {
+  @include flex(column, flex-start, flex-start);
+  gap: 8px;
+  list-style-type: none;
+  background-color: rgb(0, 0, 0, 0.4);
+  padding: 0px 5px 0px 0px;
+  font-family: $primary-font;
+  font-size: 50px;
+  border-radius: 5px;
+  z-index: 3000;
+  transform: translateX(-310px);
+  li {
+    flex-wrap: no-wrap;
+    width: 107%;
+    min-height: 100px;
+    max-height: 200px;
+    padding: 20px 20px 15px 0px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    @include flex(default, space-between, center);
+  }
+
+  li:hover {
+    background-color: gray;
+    color: aliceblue;
+  }
+}
+
+.sidebar-wrapper:not(.open) {
+  .sidebar-container li:hover {
+    transform: translateX(310px);
+  }
+}
+
+.sidebar-wrapper.open {
+  transform: translateX(460%);
+}
+
+.toggleSidebar-button {
+  height: 590px;
+  font-family: $primary-font;
+  font-size: 26px;
+  font-weight: 800;
+  padding: 3px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: rgb(255, 255, 255, 0.5);
+  margin-left: -290px;
+  cursor: pointer;
+  z-index: 3000;
+}
+
+.label {
+  width: 12px;
+  min-height: 80px;
+  margin: -16px;
+}
+
+.blue {
+  background-color: #0000ff99;
+}
+.red {
+  background-color: #bf191999;
+}
+.green {
+  background-color: #045a0499;
+}
+.orange {
+  background-color: #d75d1299;
+}
+.purple {
+  background-color: #7b0e7d99;
+}
+.brown {
+  background-color: #2d0909e3;
+}
+
+.overlay {
+  backdrop-filter: blur(5px);
+  width: 2000%;
+  height: 2000%;
+  position: absolute;
+  z-index: 1050;
+  left: -200;
+  @include flex(default, center, center);
+
+  img {
+    margin-left: 750px;
+    width: 40%;
+    border-radius: 10%;
+  }
+}
+
+.hidden {
+  display: none;
+}

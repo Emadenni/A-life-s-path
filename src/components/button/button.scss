@@ -1,0 +1,17 @@
+@use "../../../sass/" as *;
+
+
+
+.generic-button {
+  border-radius: 40px;
+  border: 1px solid #cdbebe;
+  background-color: rgb(183, 171, 171, 0.2);
+  width: 184px;
+  height: 75px;
+  font-family: $secondary-font;
+  font-size: 46px;
+  padding: 12px 12px 12px 8px;
+  color: #c69c9c;
+  box-shadow: 10px 10px 5px 5px rgba(0,0,0,0.75);
+  cursor: pointer;
+}
