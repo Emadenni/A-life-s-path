@@ -10,15 +10,93 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: -1px 10px 75px 25px  rgba(60, 59, 59, 0.5);
+  box-shadow: -1px 10px 75px 25px rgba(60, 59, 59, 0.5);
 }
 
 .custom-button-home {
-   margin-top: 200px;
-   animation: sparkle 1s infinite;
+  margin-top: 200px;
+  animation: sparkle 1s infinite;
 }
 @keyframes sparkle {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 1;
   }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .home-container {
+    width: 60.563rem;
+    height: 38.75rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home-container {
+    width: 56.563rem;
+    height: 35.75rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  .home-container {
+    width: 46.563rem;
+    height: 28.15rem;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 875px) {
+  .home-container {
+    width: 40.563rem;
+    height: 24.75rem;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 800px) {
+  .home-container {
+    width: 32.563rem;
+    height: 19.75rem;
+    background-size: contain;
+  }
+  .custom-button-home {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .home-container {
+    width: 28.563rem;
+    height: 17.25rem;
+    background-size: contain;
+  }
+  .custom-button-home {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home-container {
+    width: 25.563rem;
+    height: 33.4rem;
+    background-image: url(../../assets/images/HomeCoverInverted.png);
+
+    background-size: contain;
+  }
+  .custom-button-home {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .home-container {
+    width: 21.7rem;
+    height: 28.4rem;
+    background-image: url(../../assets/images/HomeCoverInverted.png);
+
+    background-size: contain;
+  }
+  .custom-button-home {
+    margin-top: 100px;
+  }
+}

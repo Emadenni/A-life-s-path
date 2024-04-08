@@ -1,7 +1,5 @@
 @use "../../../sass/" as *;
 
-
-
 .generic-button {
   border-radius: 40px;
   border: 1px solid #cdbebe;
@@ -12,6 +10,32 @@
   font-size: 46px;
   padding: 12px 12px 12px 8px;
   color: #c69c9c;
-  box-shadow: 10px 10px 5px 5px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
   cursor: pointer;
+}
+
+@media screen and (max-width: 560px) {
+  .generic-button {
+    width: 94px;
+    height: 40px;
+    padding: 8px 8px 8px 6px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .generic-button {
+    width: 124px;
+    height: 70px;
+
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .generic-button {
+    width: 154px;
+    height: 70px;
+
+    font-size: 32px;
+  }
 }
