@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @include flex(default, center, center);
+  @include flex(default, center, flex-start);
   overflow: hidden;
   opacity: 0;
   animation: fadeIn 2s forwards;
@@ -27,14 +27,13 @@
   .resume-container {
     max-width: 31.5rem;
     min-height: 38.75rem;
-    padding: 5px;
+
     gap: 18px;
   }
 }
 @media screen and (max-width: 565px) {
   .resume-container {
     max-width: 31rem;
-    padding: 5px;
   }
 }
 @media screen and (max-width: 510px) {
@@ -57,4 +56,3 @@
     gap: 15px;
   }
 }
-

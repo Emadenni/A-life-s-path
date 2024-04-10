@@ -13,11 +13,12 @@
   background-color: rgb(0, 0, 0, 0.4);
   padding: 0px 5px 0px 0px;
   font-family: $primary-font;
-  font-size: 50px;
+
   border-radius: 5px;
   z-index: 3000;
   transform: translateX(-310px);
   li {
+    font-size: 50px;
     flex-wrap: no-wrap;
     width: 107%;
     min-height: 100px;
@@ -37,12 +38,14 @@
 }
 
 .sidebar-wrapper:not(.open) {
+  margin-top: 100px;
   .sidebar-container li:hover {
     transform: translateX(310px);
   }
 }
 
 .sidebar-wrapper.open {
+  margin-top: 100px;
   transform: translateX(460%);
 }
 
@@ -105,32 +108,121 @@
   display: none;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1155px) {
+  .overlay {
+    img {
+      margin-left: 650px;
+      width: 26%;
+    }
+  }
+}
+@media screen and (max-width: 1050px) {
+  .overlay {
+    img {
+      margin-left: 500px;
+      width: 18%;
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .sidebar-wrapper {
+    margin-top: 40px;
+  }
+  .overlay {
+    img {
+      margin-left: 400px;
+      width: 14%;
+    }
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .overlay {
+    img {
+      margin-left: 350px;
+      width: 12%;
+    }
+  }
+}
+@media screen and (max-width: 735px) {
+  .overlay {
+    img {
+      margin-left: 250px;
+      width: 8%;
+    }
+  }
+}
+@media screen and (max-width: 655px) {
   .sidebar-container {
-    transform: translateX(-317px);
+    transform: translateX(-310px);
     gap: 10px;
+  }
+  .overlay {
+    img {
+      display: none;
+    }
+  }
+  .toggleSidebar-button {
+    margin-left: -281px;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 510px) {
   .sidebar-container {
-    transform: translateX(-317px);
-    gap: 10px;
+    transform: translateX(-312px);
+    gap: 4px;
+    li {
+      width: 104.525%;
+      padding-left: 2px;
+    }
   }
 
-  .toggleSidebar-button {
-    margin-left: -295px;
+  .sidebar-wrapper.open {
+    margin-left: 60px;
   }
-}
-@media screen and (max-width: 480px) {
-  .sidebar-container {
-    transform: translateX(-317px);
-    gap: 10px;
-  }
-
   .toggleSidebar-button {
     margin-left: -295px;
     font-size: 16px;
   }
 }
+@media screen and (max-width: 480px) {
+  .sidebar-wrapper.open {
+    margin-top: 100px;
+    margin-left: 80px;
+    transform: translateX(450%);
+    
+  }
+  .toggleSidebar-button {
+    margin-left: -295px;
+    font-size: 12px;
+  }
 
+}
+@media screen and (max-width: 420px) {
+  .sidebar-wrapper.open {
+    
+    margin-left: 130px;
+    
+    
+  }
+  .toggleSidebar-button {
+    margin-left: -295px;
+    font-size: 12px;
+  }
+
+}
+@media screen and (max-width: 380px) {
+  .sidebar-wrapper.open {
+    
+    margin-left: 180px;
+    
+    
+  }
+  .toggleSidebar-button {
+    margin-left: -295px;
+    font-size: 8px;
+  }
+
+}
