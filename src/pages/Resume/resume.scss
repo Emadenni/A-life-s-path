@@ -7,9 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   @include flex(default, center, center);
   overflow: hidden;
   opacity: 0;
@@ -22,6 +20,41 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .resume-container {
+    max-width: 31.5rem;
+    min-height: 38.75rem;
+    padding: 5px;
+    gap: 18px;
+  }
+}
+@media screen and (max-width: 565px) {
+  .resume-container {
+    max-width: 31rem;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .resume-container {
+    max-width: 31rem;
+    gap: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .resume-container {
+    max-width: 31.2rem;
+    gap: 18px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .resume-container {
+    max-width: 31.2rem;
+    gap: 15px;
   }
 }
 

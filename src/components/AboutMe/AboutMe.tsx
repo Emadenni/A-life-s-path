@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import "./aboutMe.scss";
 import profilePic from "../../assets/images/profilePic.jpg";
-
+import linkedInIcon from "../../assets/images/linkedin-icon-2048x2048-znrfbdj4.png"
 
 
 const AboutMe = () => {
@@ -9,7 +10,7 @@ const AboutMe = () => {
   
       <div className="aboutMe-container">
         <div className="aboutMe-container__text" >
-         <img src={profilePic} alt="profile" />
+         <img src={profilePic} alt="profile" className="profilePic"/>
         <p>
        
           My name is Emanuele De Negri, I am 37 years old, and I have recently embarked on my journey in the world of
@@ -53,6 +54,9 @@ const AboutMe = () => {
             </li>
           </div>
         </ul>
+        <Link to="https://www.linkedin.com/in/emanuele-de-negri-6a99b825b/" >
+        <img src={linkedInIcon} alt="linkedIn-icon" className="linkedIn-icon"/>
+        </Link>
       </div>
     
   );

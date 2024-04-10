@@ -3,7 +3,7 @@
 .aboutMe-container {
   min-width: 100%;
   min-height: 500px;
-  gap: 10px;
+  gap: 12px;
   @include flex(column, center, center);
 
   &__text {
@@ -11,21 +11,23 @@
     gap: 60px;
   }
 
-  img {
-    width: 100px;
-    margin-top: 35px;
+  .profilePic {
+    width: 86px;
+
   }
   p {
-    max-width: 100%;
-    text-align: center;
+    max-width:94%;
+    text-align: left;
     line-height: 24px;
     padding: 30px;
     font-size: 20px;
-    font-weight: 500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/*     font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: $primary-font;
+    font-weight: 100;
     color: rgb(220, 223, 223);
     text-shadow: 3px 3px 3px black;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-top: -80px;
   }
 
@@ -35,14 +37,13 @@
     background-color: rgba(0, 0, 0, 0.2);
     padding: 15px;
     list-style-type: none;
-    font-size: 20px;
     font-weight: 500;
     font-family: $primary-font;
     color: rgb(220, 223, 223);
     text-shadow: 3px 3px 3px black;
     @include flex(default, center, center);
-    gap: 2.05vw; // Modifica il gap in viewport width
-    max-width: 800px; // Specifica una larghezza massima per evitare che l'elenco diventi troppo largo
+    gap: 2.05vw; 
+    max-width: 800px; 
     margin-top: 20px;
 
     li {
@@ -64,6 +65,12 @@
   }
 }
 
+.linkedIn-icon {
+  width: 40px;
+  margin-top: 10px;
+}
+
+
 .listPart2,
 .listPart1 {
   text-align: center;
@@ -75,3 +82,30 @@
   background-color: transparent;
   color: rgb(209, 105, 105);
 }
+
+
+@media screen and (max-width: 510px) {
+  .aboutMe-container {
+
+    p {
+      font-size: 14px;
+      max-width: 330px;
+    }
+
+    ul {
+      max-width: 320px; 
+      @include flex(column, center, center);
+
+      li {
+        font-size: 18px;
+
+        span {
+          font-size: 14px;
+        }
+      }
+   
+      
+    }
+  }
+}
+

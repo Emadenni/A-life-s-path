@@ -28,3 +28,34 @@ h1 {
   align-self: flex-end;
   margin-right: 40px;
 }
+
+@media screen and (max-width: 650px) {
+  .frame-container {
+    max-width: 410px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .frame-container {
+    max-width: 380px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .frame-container {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .frame-container {
+    max-width: 320px;
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
+@media screen and (max-width: 395px) {
+  .frame-container {
+    max-width: 290px;
+  }
+}

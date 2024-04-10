@@ -1,7 +1,6 @@
 @use "./../../../sass/" as *;
 
 .sidebar-wrapper {
-
   @include flex(default, center, center);
   transition: left 0.5s;
   z-index: 3000;
@@ -105,3 +104,33 @@
 .hidden {
   display: none;
 }
+
+@media screen and (max-width: 650px) {
+  .sidebar-container {
+    transform: translateX(-317px);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .sidebar-container {
+    transform: translateX(-317px);
+    gap: 10px;
+  }
+
+  .toggleSidebar-button {
+    margin-left: -295px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sidebar-container {
+    transform: translateX(-317px);
+    gap: 10px;
+  }
+
+  .toggleSidebar-button {
+    margin-left: -295px;
+    font-size: 16px;
+  }
+}
+
