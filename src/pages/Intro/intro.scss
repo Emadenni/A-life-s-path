@@ -8,10 +8,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   @include flex(column, center, center);
-  gap: 40px;
+  gap: 10px;
   font-family: $primary-font;
-  position: relative;
-  box-shadow: -1px 10px 75px 25px  rgba(60, 59, 59, 0.5);
+
+  box-shadow: -1px 10px 75px 25px rgba(60, 59, 59, 0.5);
 
   h1 {
     color: #d48080;
@@ -27,23 +27,20 @@
 
   &__box {
     background-color: rgb(185, 19, 19, 0.12);
-    width: 800px;
+    max-width: 800px;
     @include flex(column, center, center);
     color: white;
     font-size: 30px;
     font-weight: 200;
     line-height: 180%;
     text-align: center;
-    opacity: 0; 
+    opacity: 0;
     animation: fadeIn 5s forwards;
     margin-bottom: 50px;
-   
   }
-
 
   @keyframes fadeIn {
     from {
-      
     }
     to {
       opacity: 1;
@@ -51,14 +48,13 @@
   }
 
   &__profilePic {
-    position: absolute;
     width: 120px;
-    transform: translate(-440px, 220px);
+    align-self: flex-start;
+    margin-left: 40px;
   }
   &__profileName {
-    position: absolute;
     width: 230px;
-    transform: translate(-440px, 300px);
+    align-self: flex-start;
   }
 }
 
@@ -67,4 +63,257 @@
   width: 40px;
   align-self: flex-end;
   margin-right: 130px;
+}
+
+@media screen and (max-width: 1150px) {
+  .intro-container {
+    width: 60.563rem;
+    height: 38.75rem;
+    gap: 35px;
+
+    h1 {
+      font-size: 30px;
+
+      margin-top: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    &__box {
+      max-width: 700px;
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    &__profilePic {
+      width: 90px;
+      align-self: flex-start;
+      margin-left: 40px;
+      margin-bottom: -20px;
+    }
+    &__profileName {
+      width: 190px;
+      align-self: flex-start;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .intro-container {
+    width: 52.563rem;
+    height: 35.75rem;
+    gap: 35px;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    &__box {
+      background-color: rgb(185, 19, 19, 0.12);
+      max-width: 700px;
+      @include flex(column, center, center);
+      color: white;
+      font-size: 20px;
+      font-weight: 200;
+      line-height: 180%;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 5s forwards;
+      margin-bottom: 0px;
+    }
+
+    &__profilePic {
+      width: 90px;
+      align-self: flex-start;
+      margin-left: 40px;
+    }
+    &__profileName {
+      width: 190px;
+      align-self: flex-start;
+    }
+  }
+}
+@media screen and (max-width: 950px) {
+  .intro-container {
+    width: 49.563rem;
+    height: 36.15rem;
+    background-size: cover;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    &__box {
+      max-width: 700px;
+      font-size: 20px;
+      margin-bottom: 0px;
+    }
+
+    &__profilePic {
+      width: 90px;
+      align-self: flex-start;
+      margin-left: 40px;
+      margin-bottom: -25px;
+    }
+    &__profileName {
+      width: 190px;
+      align-self: flex-start;
+    }
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .intro-container {
+    width: 44.563rem;
+    height: 38.75rem;
+    background-size: cover;
+    gap: 42px;
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    &__box {
+      max-width: 600px;
+      @include flex(column, center, center);
+      margin-bottom: 0px;
+    }
+
+    &__profilePic {
+      width: 90px;
+      align-self: flex-start;
+      margin-left: 40px;
+      margin-bottom: -25px;
+    }
+    &__profileName {
+      width: 190px;
+      align-self: flex-start;
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .intro-container {
+    width: 38.563rem;
+    height: 38.75rem;
+    background-size: cover;
+    gap: 42px;
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    &__box {
+      max-width: 600px;
+      @include flex(column, center, center);
+      margin-bottom: 0px;
+    }
+
+    &__profilePic {
+      width: 90px;
+      align-self: flex-start;
+      margin-left: 40px;
+      margin-bottom: -25px;
+    }
+    &__profileName {
+      width: 190px;
+      align-self: flex-start;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .intro-container {
+    width: 34.563rem;
+    height: 38.75rem;
+    background-size: cover;
+    gap: 42px;
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    &__box {
+      max-width: 600px;
+      @include flex(column, center, center);
+      margin-bottom: 0px;
+    }
+
+    &__profilePic {
+      width: 90px;
+      align-self: flex-start;
+      margin-left: 40px;
+      margin-bottom: -25px;
+    }
+    &__profileName {
+      width: 190px;
+      align-self: flex-start;
+    }
+  }
+
+  .homeIconIntro {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .intro-container {
+    width: 30.563rem;
+    height: 38.75rem;
+    background-size: cover;
+    gap: 42px;
+
+    &__box {
+      max-width: 450px;
+      @include flex(column, center, center);
+      margin-bottom: 0px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .intro-container {
+    width: 25.563rem;
+    height: 38.75rem;
+    background-size: cover;
+    gap: 42px;
+
+    &__box {
+      max-width: 460px;
+      @include flex(column, center, center);
+
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (max-width: 430px) {
+  .intro-container {
+    width: 20.563rem;
+    height: 38.75rem;
+    background-size: cover;
+    gap: 42px;
+
+    &__box {
+      max-width: 320px;
+      @include flex(column, center, center);
+
+      font-size: 15px;
+    }
+  }
 }
