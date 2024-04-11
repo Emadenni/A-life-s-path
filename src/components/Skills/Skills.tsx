@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./skills.scss";
-import softSkills from "../../assets/images/soft-skills.png";
+import softSkills from "../../assets/images/soft-skills_port.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-free/css/all.css";
@@ -141,7 +141,7 @@ const Skills: React.FC = () => {
       title: "Section 1",
       content: (
         <section className="section1-skills">
-          <img src={softSkills} alt="soft-skills" />
+          <img src={softSkills} alt="soft-skills" className="soft-skills-img" />
 
           {currentSection === 0 && (
             <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(1)} className="scroll-down-arrow" />
