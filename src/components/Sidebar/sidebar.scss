@@ -162,6 +162,14 @@
     transform: translateX(-310px);
     gap: 10px;
   }
+  .sidebar-wrapper:not(.open) {
+    margin-top: 70px;
+  }
+
+  .sidebar-wrapper.open {
+
+    margin-top: 70px;
+  }
   .overlay {
     img {
       display: none;
@@ -183,12 +191,12 @@
     }
   }
   .sidebar-wrapper:not(.open) {
-    margin-top: 100px;
+    margin-top: 70px;
   }
 
   .sidebar-wrapper.open {
     margin-left: 60px;
-    margin-top: 100px;
+    margin-top: 70px;
   }
   .toggleSidebar-button {
     margin-left: -295px;
@@ -197,13 +205,13 @@
 }
 @media screen and (max-width: 480px) {
   .sidebar-wrapper.open {
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 92px;
   }
 
   .sidebar-wrapper:not(.open) {
     left: -1px;
-    margin-top: 100px;
+    margin-top: 70px;
   }
   .toggleSidebar-button {
     margin-left: -295px;
@@ -212,12 +220,12 @@
 }
 @media screen and (max-width: 420px) {
   .sidebar-wrapper.open {
- margin-top: 100px;
+ margin-top: 70px;
     margin-left: 96px;
   }
   .sidebar-wrapper:not(.open) {
     left: -1px;
-    margin-top: 100px;
+    margin-top: 70px;
   }
   .toggleSidebar-button {
     margin-left: -295px;
@@ -227,11 +235,11 @@
 @media screen and (max-width: 380px) {
   .sidebar-wrapper.open {
     margin-left: 109px;
-    margin-top: 100px;
+    margin-top: 70px;
   }
   .sidebar-wrapper:not(.open) {
     left: -1px;
-    margin-top: 100px;
+    margin-top: 70px;
   }
   .toggleSidebar-button {
     margin-left: -295px;
