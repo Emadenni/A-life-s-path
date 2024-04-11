@@ -11,7 +11,7 @@ const PortfolioDetails: React.FC<PortfolioDetailsProps> = ({ card, handleCloseBu
     
 return (
     <div className="portfolioCard-details">
-      <button onClick={handleCloseButton}>X</button>
+      <button onClick={handleCloseButton} className="closeButton">X</button>
       <h3>{card.title}</h3>
       <h4>{card.subtitle}</h4>
       <img src={card.imageUrl} alt="pic" />

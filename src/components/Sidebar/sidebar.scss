@@ -4,9 +4,6 @@
   @include flex(default, center, center);
   transition: left 0.5s;
   z-index: 3000;
-  position: fixed;
-  left: -5px;
-  top: -40px;
 }
 
 .sidebar-container {
@@ -167,7 +164,6 @@
   }
 
   .sidebar-wrapper.open {
-
     margin-top: 70px;
   }
   .overlay {
@@ -191,12 +187,12 @@
     }
   }
   .sidebar-wrapper:not(.open) {
-    margin-top: 70px;
+    margin-top: 8px;
   }
 
   .sidebar-wrapper.open {
     margin-left: 60px;
-    margin-top: 70px;
+    margin-top: 8px;
   }
   .toggleSidebar-button {
     margin-left: -295px;
@@ -205,13 +201,13 @@
 }
 @media screen and (max-width: 480px) {
   .sidebar-wrapper.open {
-    margin-top: 70px;
+    margin-top: 5px;
     margin-left: 92px;
   }
 
   .sidebar-wrapper:not(.open) {
     left: -1px;
-    margin-top: 70px;
+    margin-top: 5px;
   }
   .toggleSidebar-button {
     margin-left: -295px;
@@ -219,13 +215,19 @@
   }
 }
 @media screen and (max-width: 420px) {
+  .sidebar-wrapper {
+    position: fixed;
+    left: -5px;
+    top: 20px;
+  }
+
   .sidebar-wrapper.open {
- margin-top: 70px;
+    margin-top: 5px;
     margin-left: 96px;
   }
   .sidebar-wrapper:not(.open) {
     left: -1px;
-    margin-top: 70px;
+    margin-top: 5px;
   }
   .toggleSidebar-button {
     margin-left: -295px;
@@ -233,13 +235,19 @@
   }
 }
 @media screen and (max-width: 380px) {
+  .sidebar-wrapper {
+    position: fixed;
+    left: -5px;
+    top: 20px;
+  }
+
   .sidebar-wrapper.open {
     margin-left: 109px;
-    margin-top: 70px;
+    margin-top: 0px;
   }
   .sidebar-wrapper:not(.open) {
     left: -1px;
-    margin-top: 70px;
+    margin-top: 0px;
   }
   .toggleSidebar-button {
     margin-left: -295px;

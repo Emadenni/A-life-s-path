@@ -2,10 +2,8 @@
 
 .frame-container {
   border: solid 10px;
-
   max-width: 1040px;
   min-height: 100%;
-
   text-align: center;
   padding-top: 10px;
   @include flex(column, center, center);

@@ -61,3 +61,28 @@
   @include flex(column, center,center);
   padding: 20px;
 }
+
+@media screen and (max-width: 460px) {
+  .comfort-zone-img {
+    width: 260px;
+  } 
+}
+@media screen and (max-width: 1050px) {
+  .section2-extra {
+    @include flex(column, space-around, center);
+  } 
+}
+@media screen and (max-width: 380px) {
+.section2-extra {
+  p {
+    padding: 20px;
+    font-size: 16px;
+}
+}
+.playlist {
+  border-radius: 8px;
+  width: 270px;
+  height: 392px;
+  border: none;
+}
+}
