@@ -47,6 +47,7 @@
     width: 46.563rem;
     height: 28.15rem;
     background-size: contain;
+    margin-bottom: 70px;
   }
 }
 @media screen and (max-width: 875px) {
@@ -54,6 +55,7 @@
     width: 40.563rem;
     height: 24.75rem;
     background-size: contain;
+    margin-bottom: 100px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -61,6 +63,7 @@
     width: 32.563rem;
     height: 19.75rem;
     background-size: contain;
+    margin-bottom: 100px;
   }
   .custom-button-home {
     margin-top: 100px;
@@ -71,6 +74,7 @@
     width: 28.563rem;
     height: 17.25rem;
     background-size: contain;
+    margin-bottom: 100px;
   }
   .custom-button-home {
     margin-top: 100px;
@@ -81,7 +85,7 @@
     width: 25.563rem;
     height: 33.4rem;
     background-image: url(../../assets/images/HomeCoverInverted.png);
-
+    margin-bottom: 100px;
     background-size: contain;
   }
   .custom-button-home {
@@ -90,10 +94,10 @@
 }
 @media screen and (max-width: 430px) {
   .home-container {
-    width: 21.7rem;
-    height: 28.4rem;
+    width: 24.7rem;
+    height: 29.4rem;
     background-image: url(../../assets/images/HomeCoverInverted.png);
-
+    margin-bottom: 100px;
     background-size: contain;
   }
   .custom-button-home {
