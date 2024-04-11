@@ -4,6 +4,9 @@
   @include flex(default, center, center);
   transition: left 0.5s;
   z-index: 3000;
+  position: fixed;
+  left: -5px;
+  top: 20px;
 }
 
 .sidebar-container {
@@ -29,6 +32,9 @@
     cursor: pointer;
     overflow: hidden;
     @include flex(default, space-between, center);
+    position: -webkit-sticky; /* Per browser WebKit */
+    position: sticky;
+    top: 0;
   }
 
   li:hover {
@@ -61,6 +67,7 @@
   margin-left: -290px;
   cursor: pointer;
   z-index: 3000;
+  animation: sparkle 8s infinite;
 }
 
 .label {
@@ -126,9 +133,6 @@
 }
 
 @media screen and (max-width: 880px) {
-  .sidebar-wrapper {
-    margin-top: 40px;
-  }
   .overlay {
     img {
       margin-left: 400px;
@@ -178,9 +182,13 @@
       padding-left: 2px;
     }
   }
+  .sidebar-wrapper:not(.open) {
+    margin-top: 100px;
+  }
 
   .sidebar-wrapper.open {
     margin-left: 60px;
+    margin-top: 100px;
   }
   .toggleSidebar-button {
     margin-left: -295px;
@@ -190,39 +198,43 @@
 @media screen and (max-width: 480px) {
   .sidebar-wrapper.open {
     margin-top: 100px;
-    margin-left: 80px;
-    transform: translateX(450%);
-    
+    margin-left: 92px;
+  }
+
+  .sidebar-wrapper:not(.open) {
+    left: -1px;
+    margin-top: 100px;
   }
   .toggleSidebar-button {
     margin-left: -295px;
     font-size: 12px;
   }
-
 }
 @media screen and (max-width: 420px) {
   .sidebar-wrapper.open {
-    
-    margin-left: 130px;
-    
-    
+ margin-top: 100px;
+    margin-left: 96px;
+  }
+  .sidebar-wrapper:not(.open) {
+    left: -1px;
+    margin-top: 100px;
   }
   .toggleSidebar-button {
     margin-left: -295px;
     font-size: 12px;
   }
-
 }
 @media screen and (max-width: 380px) {
   .sidebar-wrapper.open {
-    
-    margin-left: 180px;
-    
-    
+    margin-left: 109px;
+    margin-top: 100px;
+  }
+  .sidebar-wrapper:not(.open) {
+    left: -1px;
+    margin-top: 100px;
   }
   .toggleSidebar-button {
     margin-left: -295px;
     font-size: 8px;
   }
-
 }
