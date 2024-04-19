@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./skills.scss";
-import softSkills from "../../assets/images/soft-skills_port.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-free/css/all.css";
@@ -141,7 +140,48 @@ const Skills: React.FC = () => {
       title: "Section 1",
       content: (
         <section className="section1-skills">
-          <img src={softSkills} alt="soft-skills" className="soft-skills-img" />
+          <h2>Soft Skills</h2>
+
+          <ul>
+            <div className="soft-skills-box">
+              <li>
+                Excellent communication skills
+                <span>
+                  {" "}
+                  In my career, I have placed great importance on communication and have considered it an added value.
+                  Over the years, I have had the opportunity to put into practice communication techniques learned
+                  during various studies.
+                </span>
+              </li>
+              <li>
+                Problem-solving and critical thinking{" "}
+                <span>
+                  In many of my roles, I've had to learn to think quickly and solve challenging problems efficiently,
+                  even creatively. Over time, I've honed this skill by learning to integrate it with careful evaluation
+                  when necessary.
+                </span>
+              </li>
+            </div>
+            <div className="soft-skills-box">
+              <li>
+                Teamwork and collaboration{" "}
+                <span>
+                  {" "}
+                  I consider myself someone who enjoys working independently and autonomously. At the same time, I have
+                  always been able to integrate positively within any team, carving out my specific role based on the
+                  circumstances.
+                </span>
+              </li>
+              <li>
+                Time management and organization{" "}
+                <span>
+                  This, I believe, is my skill. I feel fulfilled when time and organization flow smoothly. I consider
+                  myself predisposed to organization and planning, not only for myself but often for my collaborators,
+                  as I have frequently observed.
+                </span>
+              </li>
+            </div>
+          </ul>
 
           {currentSection === 0 && (
             <FontAwesomeIcon icon={faChevronDown} onClick={() => setCurrentSection(1)} className="scroll-down-arrow" />
