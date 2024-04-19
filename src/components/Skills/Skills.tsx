@@ -140,7 +140,7 @@ const Skills: React.FC = () => {
       title: "Section 1",
       content: (
         <section className="section1-skills">
-          <h2>Soft Skills</h2>
+      <h2 className="title-soft-skills2">Soft <br />Skills</h2>
 
           <ul>
             <div className="soft-skills-box">
@@ -162,6 +162,7 @@ const Skills: React.FC = () => {
                 </span>
               </li>
             </div>
+            <h2 className="title-soft-skills1">Soft <br />Skills</h2>
             <div className="soft-skills-box">
               <li>
                 Teamwork and collaboration{" "}

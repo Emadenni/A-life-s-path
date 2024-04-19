@@ -89,18 +89,39 @@
 
 .section1-skills {
   padding: 0 70px;
-  
 
   ul {
     min-width: 200px;
     max-width: 800px;
 
     li {
-      @include flex (column)
-    };
+      @include flex(column);
+    }
   }
+}
 
-;
+.title-soft-skills1 {
+  color: yellow;
+  letter-spacing: 3px;
+  font-size: 35px;
+  font-weight: 100;
+  font-style: italic;
+  border-radius: 50%;
+  background-color: rgba(226, 220, 220, 0.3);
+  padding: 15px 12px 21px 12px;
+  text-align: center;
+}
+.title-soft-skills2 {
+  color: yellow;
+  letter-spacing: 3px;
+  font-size: 35px;
+  font-weight: 100;
+  font-style: italic;
+  border-radius: 50%;
+  background-color: rgba(226, 220, 220, 0.3);
+  padding: 15px 12px 21px 12px;
+  text-align: center;
+  display: none;
 }
 
 .soft-skills-box {
@@ -141,51 +162,47 @@
   .section1-skills {
     padding: 0 50px;
   }
-
-
 }
 @media screen and (max-width: 1125px) {
   .section1-skills {
     padding: 0 40px;
   }
 
-
-
   .section2-skills {
     @include flex(column, center, center);
     gap: 10px;
   }
+
+
 }
 @media screen and (max-width: 960px) {
   .section1-skills {
     padding: 0 30px;
   }
-
- 
 }
 @media screen and (max-width: 790px) {
   .section1-skills {
     padding: 0;
   }
   .soft-skills-box {
-    @include flex(column, center, center)
+    @include flex(column, center, center);
   }
 
- 
+  .title-soft-skills2 {
+    display: block;
+  }
+  .title-soft-skills1 {
+    display: none;
+  }
 }
 @media screen and (max-width: 490px) {
   .section1-skills {
     padding: 0;
   }
-
-
- 
 }
 @media screen and (max-width: 430px) {
   .section1-skills {
     padding: 0;
     margin-left: 10px;
   }
-
-
 }
