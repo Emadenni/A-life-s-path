@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./aboutMe.scss";
 import profilePic from "../../assets/images/profilePic.jpg";
 import linkedInIcon from "../../assets/images/linkedin-icon-2048x2048-znrfbdj4.png"
+import gitHubIcon from "../../assets/images/githubIcon.png"
 
 
 const AboutMe = () => {
@@ -54,9 +55,14 @@ const AboutMe = () => {
             </li>
           </div>
         </ul>
+        <footer className="links-footer">
         <Link to="https://www.linkedin.com/in/emanuele-de-negri-6a99b825b/" >
         <img src={linkedInIcon} alt="linkedIn-icon" className="linkedIn-icon"/>
         </Link>
+        <Link to="https://github.com/Emadenni" >
+        <img src={gitHubIcon} alt="gitHubIcon" className="gitHubIcon"/>
+        </Link>
+        </footer>
       </div>
     
   );

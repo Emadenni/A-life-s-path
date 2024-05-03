@@ -70,6 +70,16 @@
   margin-top: 10px;
 }
 
+.gitHubIcon {
+  width: 50px;
+  margin-top: 10px;
+}
+
+.links-footer {
+  @include flex(default, center, center);
+  gap : 10px; 
+}
+
 
 .listPart2,
 .listPart1 {
