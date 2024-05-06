@@ -8,7 +8,7 @@ import AirBean from "../../../src/assets/portfolio-cards/air-bean.png";
 import KFF from "../../../src/assets/portfolio-cards/kff1.png";
 import ALP from "../../../src/assets/portfolio-cards/Alp.png";
 import StarWars from "../../../src/assets/portfolio-cards/starWars1.png";
-import PunkAPI from "../../../src/assets/portfolio-cards/apiBeer.png";
+import SwingNotes from "../../../src/assets/portfolio-cards/swingNotes.png";
 
 export interface PortfolioCardProps {
   imageUrl: string;
@@ -94,12 +94,14 @@ const Portfolio: React.FC = () => {
       deployUrl: "https://emadenni.github.io/Star-Wars-catalog/",
     },
     {
-      imageUrl: PunkAPI,
-      title: "Punk api beers",
-      subtitle: "Vanilla Javascript/API",
+      imageUrl: SwingNotes,
+      title: "Swing Notes",
+      subtitle: "Node JS",
       kind: "Education Project",
       description:
-        "Similar to Star Wars, Punk API beers inspired me in creating dynamically generated elements combined with the implementation of a search logic with various parameters. At the moment, the project is on standby due to other priorities, but I intend to complete it one day.",
+        "Project that required creating an API for the creation and management of notes and their storage in a NoSQL database.",
+      linkUrl: "https://github.com/Emadenni/FU_JS23_swing-notes-api.git",
+   
     },
   ];
 
