@@ -60,8 +60,8 @@ const Portfolio: React.FC = () => {
       kind: "Education Project",
       description:
         "Air Bean was my first individual experience with React. Among the various challenges of this project, using an API to create an account and implementing a login logic through JWT authentication method stood out. Among the project's requirements was also the utilization of Zustand to implement global states. Final grade: Väl Gödkänt.",
-      linkUrl: "https://github.com/Emadenni/Emanuele-De-Negri_FU-JS23_individuell_examination.git",
-      deployUrl: "https://emadenni.github.io/Emanuele-De-Negri_FU-JS23_individuell_examination/",
+      linkUrl: "https://github.com/Emadenni/Air-bean-app.git",
+      deployUrl: "https://emadenni.github.io/Air-bean-app/",
     },
     {
       imageUrl: KFF,
